@@ -1,0 +1,22 @@
+<div class="ew-product-slider">
+  <div class="splide" id="image-slider">
+    <div class="splide__track">
+        <div class="splide__list">
+          {% if product.media.size > 0 %}
+            {% for media_item in product.media %}
+              <div class="splide__slide">
+                <img src="{{ media_item.src | image_url: width: 1000 }}" alt="{{ media_item.alt }}" onclick="openLightbox(this.src)">
+              </div>
+            {% endfor %}
+          {% endif %}
+        </div>
+    </div>
+  </div>
+
+  <div id="lightbox" class="lightbox">
+    <div class="ew-lightbox-product">
+      <span class="close" onclick="closeLightbox()">✕</span>
+      <img id="lightbox-img">
+    </div>
+  </div>
+</div>

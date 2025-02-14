@@ -1,0 +1,104 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "linklist_mKQFYU": {
+          "type": "linklist",
+          "settings": {
+            "linklist": "main-menu",
+            "title": "",
+            "accordion_default": ""
+          }
+        },
+        "linklist_rywkB3": {
+          "type": "linklist",
+          "settings": {
+            "linklist": "footer",
+            "title": "",
+            "accordion_default": ""
+          }
+        },
+        "linklist_hGGAWE": {
+          "type": "linklist",
+          "settings": {
+            "linklist": "customer-account-main-menu",
+            "title": "Utility",
+            "accordion_default": ""
+          }
+        },
+        "newsletter_qzJBJd": {
+          "type": "newsletter",
+          "settings": {
+            "show_image": true,
+            "image": "shopify://shop_images/Esmel_logo-02.png",
+            "wh_ratio": 1,
+            "newsletter_enable": true,
+            "recaptcha_enabled": false,
+            "kicker": "Signup for Latest updates",
+            "heading": "",
+            "richtext": "",
+            "text_size": 4,
+            "background_color": "#ffffff",
+            "text_color_value": "#000000"
+          }
+        },
+        "social_JBEAMF": {
+          "type": "social",
+          "disabled": true,
+          "settings": {
+            "title": "Stay in touch.",
+            "text_size": 8,
+            "enable_follow_on_shop": true
+          }
+        }
+      },
+      "block_order": [
+        "linklist_mKQFYU",
+        "linklist_rywkB3",
+        "linklist_hGGAWE",
+        "newsletter_qzJBJd",
+        "social_JBEAMF"
+      ],
+      "custom_css": [
+        "footer.footer {background: #ffffff;}",
+        ".footer__block--socials {border-top: none;}"
+      ],
+      "settings": {
+        "menu_position": "right",
+        "logo_max_limit": 120,
+        "width": "wrapper",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "subfooter": {
+      "type": "subfooter",
+      "settings": {
+        "footer_secondary_linklist": "footer",
+        "footer_payment_enable": false,
+        "footer_social_enable": true,
+        "show_locale_selector": true,
+        "show_currency_selector": true,
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "footer",
+    "subfooter"
+  ]
+}
