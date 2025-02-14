@@ -8,11 +8,6 @@
   object-position: left !important;
 }
 
-.splide {
-  max-width: 800px;
-  margin: auto;
-}
-
 .splide__slide img {
   width: 100%;
   height: 800px;
@@ -123,4 +118,15 @@ fill:red !important;
 
 .header__desktop__bar__l .header__desktop__button:first-child {
   margin-left: calc(var(--nav-gutter)* -1);
+}
+
+.header__desktop__buttons--icons .header__desktop__button .navlink:after {
+  display: none;
+}
+.navlink-location:hover svg {
+  fill: #000;
+}
+.navlink-call:hover path,
+.navlink-envelope:hover path {
+  stroke: #000;
 }

@@ -14212,7 +14212,7 @@ body:not(.theme-animate-hover) .header__desktop__buttons--icons .header__desktop
   font-weight: var(--FONT-WEIGHT-BODY);
   letter-spacing: var(--FONT-BODY-LETTER-SPACING);
   text-transform: var(--FONT-BODY-TRANSFORM);
-  font-size: calc(var(--font-6) * var(--FONT-ADJUST-BODY));
+  font-size: 12px;
   text-transform: none;
   letter-spacing: normal;
 }
@@ -14222,7 +14222,7 @@ body:not(.theme-animate-hover) .header__desktop__buttons--icons .header__desktop
   font-weight: var(--FONT-WEIGHT-BODY);
   letter-spacing: var(--FONT-BODY-LETTER-SPACING);
   text-transform: var(--FONT-BODY-TRANSFORM);
-  font-size: calc(var(--font-6) * var(--FONT-ADJUST-BODY));
+  font-size: 12px;
   text-transform: none;
   letter-spacing: normal;
 }
@@ -14232,7 +14232,7 @@ body:not(.theme-animate-hover) .header__desktop__buttons--icons .header__desktop
   font-weight: var(--FONT-WEIGHT-BODY);
   letter-spacing: var(--FONT-BODY-LETTER-SPACING);
   text-transform: var(--FONT-BODY-TRANSFORM);
-  font-size: calc(var(--font-6) * var(--FONT-ADJUST-BODY));
+  font-size: 12px;
   text-transform: none;
   letter-spacing: normal;
 }
