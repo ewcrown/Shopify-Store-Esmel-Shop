@@ -13783,6 +13783,7 @@ body .shopify-email-marketing-confirmation__container {
 .header__menu__inner {
   display: flex;
   height: 100%;
+  padding:10px;
 }
 .navlink--toplevel,
 .header__desktop__button .navlink {
@@ -25108,3 +25109,4 @@ input:not(.sold-out):not(.unavailable):not(:disabled) ~ label [data-shopify-xr-h
 strong {
     font-weight: 700 !important;
 }
+
