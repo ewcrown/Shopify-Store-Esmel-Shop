@@ -91,11 +91,13 @@
 .icon-theme-stroke {
   stroke: #b5b5b5 !important;
 }
-.header__desktop__button  .navlink:hover .icon-theme-stroke {
-   stroke: #000000 !important;
+
+.header__desktop__button .navlink:hover .icon-theme-stroke {
+  stroke: #000000 !important;
 }
-.header__desktop__button  .navlink:hover  #Dribbble-Light-Preview{
-fill:red !important;
+
+.header__desktop__button .navlink:hover #Dribbble-Light-Preview {
+  fill: red !important;
 }
 
 
@@ -123,8 +125,17 @@ fill:red !important;
 .header__desktop__buttons--icons .header__desktop__button .navlink:after {
   display: none;
 }
+
 .navlink-envelope:hover svg,
 .navlink-call:hover svg,
 .navlink-location:hover svg {
   fill: #000;
+}
+
+.ew-header-menu .header__menu__inner .menu__item:not(:nth-last-of-type(3)) {
+  border-right: 1px solid #979797;
+}
+
+.ew-header-menu .menu__item a {
+  padding: 0 24px;
 }
