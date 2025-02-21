@@ -114,7 +114,7 @@
           "type": "text",
           "settings": {
             "title": "Returns and refunds",
-            "content": "<p>Our customers' satisfaction is our number one priority.</p><p>We offer a full refund when the product has not been opened and is unused and a partial refund when the packaging can not be accounted for.</p><p>Please note that customers will be responsible for shipping costs.</p><p>Any returns must be in the original packaging with proof of purchase.</p>"
+            "content": "<p>For assistance with returns, exchanges, or any issues with<br/>your order, please contact us at:</p><p><strong>Email</strong>:<br/>     Info@esmelofficial.com</p><p><strong>Phone</strong>:<br/>     04232301093</p>"
           }
         },
         "faq-1": {
@@ -197,7 +197,7 @@
             "icon_name": "icon-phone",
             "icon_color": "#aaaaaa",
             "title": "24/7 support",
-            "text": "<p>Call us anytime at 1(800) 555-1234.</p>",
+            "text": "<p>Call us anytime at 042-32301093</p>",
             "link_text": "",
             "link_url": ""
           }
