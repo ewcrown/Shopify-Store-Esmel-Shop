@@ -17,16 +17,16 @@
         "linklist_mKQFYU": {
           "type": "linklist",
           "settings": {
-            "linklist": "main-menu",
-            "title": "",
+            "linklist": "quick-links",
+            "title": "Quick Links",
             "accordion_default": ""
           }
         },
         "linklist_rywkB3": {
           "type": "linklist",
           "settings": {
-            "linklist": "footer",
-            "title": "",
+            "linklist": "policies",
+            "title": "Policies",
             "accordion_default": ""
           }
         },
