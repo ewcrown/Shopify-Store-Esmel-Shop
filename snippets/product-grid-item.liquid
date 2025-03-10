@@ -217,7 +217,7 @@ assign placeholder = placeholder | default: false
 
       {% capture swatch_link_markup %}
         {{ swatch_link_markup }}
-        <radio-swatch class="swatch__button{% if in_stock_options.size == 0 %} sold-out{% endif %}{% if settings.swatches_squares %} swatch__button--square{% endif %}">
+        <radio-swatch class="swatch__button{% if in_stock_options.size == 0 %} coming soon{% endif %}{% if settings.swatches_squares %} swatch__button--square{% endif %}">
           <a
             href="{{ current_variant.url }}"
             class="swatch__label"
@@ -339,7 +339,7 @@ assign placeholder = placeholder | default: false
       {% endif %}
       {% if sold_out %}
         <p class="product__grid__price__sold">
-          <em>{{ 'products.product.sold_out' | t }}</em>
+          <em>coming soon</em>
         </p>
       {% endif %}
     </a>

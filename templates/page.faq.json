@@ -72,117 +72,125 @@
         "accordion_block_1_1": {
           "type": "text",
           "settings": {
-            "title": "My order is delayed. Can you provide an update?",
-            "content": "<p>I’m really sorry for the delay! Please provide your order number, and I’ll check the status right away to give you an update on your delivery.</p>"
+            "title": "What makes ESMEL's clothing unique?",
+            "content": "<p>Our pieces feature exquisite <strong>embroidery, adda work, and<br/>embellishments</strong>, crafted with the finest fabrics and attention to detail.</p>"
           }
         },
         "text_DhU6Qt": {
           "type": "text",
           "settings": {
-            "title": "Why is my order taking so long to ship?",
-            "content": "<p>I understand your concern, and I’m sorry for the wait. Sometimes delays happen due to high order volumes or courier issues. Let me check the status of your order and get back to you with an update.</p>"
+            "title": "How do I care for my embroidered garments?",
+            "content": "<p>Dry clean when possible. Avoid rough surfaces and store in a<br/>cool, dry place to preserve the embroidery and embellishments.</p>"
+          }
+        },
+        "text_4PqXBW": {
+          "type": "text",
+          "settings": {
+            "title": "What fabrics do you use?",
+            "content": "<p>We use luxurious fabrics like silk, velvet, chiffon,<br/>georgette, and satin, designed to complement our intricate embroidery.</p>"
           }
         },
         "text_B6WCe3": {
           "type": "text",
           "settings": {
-            "title": "I ordered a dress a week ago, and it hasn’t arrived yet. What’s the status?",
-            "content": "<p> I’m sorry for the delay. Let me look into the status of your order. Could you please provide your order number, and I’ll update you as soon as possible?</p>"
+            "title": "How do I place an order?",
+            "content": "<p>Browse our collection, add items to your cart, and check out<br/>with your payment and shipping details.</p>"
           }
         },
         "text_FKjWVi": {
           "type": "text",
           "settings": {
-            "title": "The tracking link for my order isn’t showing any updates. What should I do?",
-            "content": "<p>I apologize for the inconvenience. Sometimes tracking information may be delayed in updating. Please send me your tracking number, and I’ll investigate further to ensure it’s on its way.</p>"
+            "title": "What is your return policy?",
+            "content": "<p>Returns and exchanges are accepted within 7 days, provided<br/>the item is in its original condition. See our Return and Exchange Policy for<br/>more details.</p>"
           }
         },
         "text_RPEmXN": {
           "type": "text",
           "settings": {
-            "title": "Can I change my delivery address after placing my order?",
-            "content": "<p>If your order hasn’t shipped yet, we can update your delivery address. Please provide your new address as soon as possible, and I’ll assist with making the change.</p>"
+            "title": "Can I track my order?",
+            "content": "<p>Yes, you’ll receive a tracking number once your order ships.</p>"
           }
         },
         "text_P8UaT4": {
           "type": "text",
           "settings": {
-            "title": "I was expecting my order today, but it hasn’t arrived yet. Can you help?",
-            "content": "<p>I’m sorry for the delay! It’s possible the delivery was delayed by the courier. Please provide your order number, and I’ll check on the status for you right away.</p>"
+            "title": "Do you ship internationally?",
+            "content": "<p>Yes, we offer international shipping. Shipping fees vary by<br/>location.</p>"
           }
         },
         "text_MG7kbh": {
           "type": "text",
           "settings": {
-            "title": "Why hasn’t my order shipped yet?",
-            "content": "<p>I apologize for the delay in processing your order. It may be due to high demand or stock availability. Let me check the status of your order and get back to you shortly.</p>"
+            "title": "How do I choose the right size?",
+            "content": "<p>Refer to our size guide on the product page, or contact<br/>customer service for assistance.</p>"
           }
         },
         "text_Uj3Emi": {
           "type": "text",
           "settings": {
-            "title": "Can you provide an estimated delivery date for my delayed order?",
-            "content": "<p>I’m sorry for the delay. Once I check on your order, I’ll be able to provide a more accurate delivery estimate. Could you please share your order number so I can assist you further?</p>"
+            "title": "Can I modify or cancel my order?",
+            "content": "<p>Once an order is placed, we process it quickly. If you need<br/>to modify or cancel it, please contact us within <strong>24 hours</strong> of placing the<br/>order.</p>"
           }
         },
         "text_w8waCW": {
           "type": "text",
           "settings": {
-            "title": "I received a damaged item. What should I do?",
-            "content": "<p>I’m really sorry to hear that your item arrived damaged. Please send me a photo of the damage, and I’ll help you with an exchange or return right away.</p>"
+            "title": "How do I get updates on new collections?",
+            "content": "<p>Sign up for our newsletter on the website or follow us on <strong>Instagram<br/>& Facebook</strong> for the latest updates.</p>"
           }
         },
         "text_jN3Tcm": {
           "type": "text",
           "settings": {
-            "title": "My order is showing \"Delivered,\" but I haven’t received it. What now?",
-            "content": "<p>I’m sorry for the confusion. It’s possible the delivery was made to a different location or left with a neighbor. Please check with your household, and if you still can’t locate it, let me know, and I’ll assist in investigating with the courier.</p>"
+            "title": "Is my payment information secure?",
+            "content": "<p>Yes, we use secure payment gateways like <strong>SSL encryption</strong><br/>to protect your payment details during checkout.</p>"
           }
         },
         "text_DHHjwA": {
           "type": "text",
           "settings": {
-            "title": "I ordered two items, but only one arrived. Where is the other one?",
-            "content": "<p>I apologize for the mix-up. It’s possible your order was shipped in separate packages. Please share your order number, and I’ll verify the status of the second item for you.</p>"
+            "title": "What if my item arrives damaged?",
+            "content": "<p>If you receive a damaged item, please contact us immediately<br/>at <strong>Info@esmelofficial.com</strong> with a photo of the damage, and we will<br/>arrange a replacement.</p>"
           }
         },
         "text_w3PKVd": {
           "type": "text",
           "settings": {
-            "title": "Will my order be delivered by a specific time?",
-            "content": "<p>We do our best to deliver within the standard time frame, but we don’t offer specific time-slot deliveries. I can help you check the estimated delivery date for your order, though. Please provide your order number.</p>"
+            "title": "How long will it take to receive my order?",
+            "content": "<p>Orders are generally dispatched within 4-5 working days or<br/>it will be communicated at the time of order confirmation. It is also mentioned<br/>on the product page of the website<strong>.</strong></p>"
           }
         },
         "text_YGAqBr": {
           "type": "text",
           "settings": {
-            "title": "Can I track my order in real time?",
-            "content": "<p>Yes, once your order is shipped, you will receive a tracking number. You can use this to track your order through the courier’s website for real-time updates. Let me know if you need assistance with tracking!</p>"
+            "title": "Can I change my shipping address after placing an order?",
+            "content": "<p>If your order hasn't shipped yet, we may be able to assist.<br/>Please contact us immediately with the updated address.</p>"
           }
         },
         "text_tMehqq": {
           "type": "text",
           "settings": {
-            "title": "I need my order for an event. Can I expedite the delivery?",
-            "content": "<p>I understand how important it is to receive your order on time. Please provide me with your order number, and I will check if we can offer expedited shipping for your purchase.</p>"
+            "title": "Can I buy ESMEL clothing in stores?",
+            "content": "<p>Currently, ESMEL is an online-only brand. Stay tuned for<br/>possible retail partnerships in the future.</p>"
           }
         },
         "text_fyYLnK": {
           "type": "text",
           "settings": {
-            "title": "Can I cancel my order because it’s been delayed?",
-            "content": "<p>I’m really sorry about the delay! Orders can only be canceled if they haven’t been shipped yet. Let me check the status of your order, and if it’s still processing, I’ll help with the cancellation.</p>"
+            "title": "Do you offer wholesale or bulk purchases?",
+            "content": "<p>Yes, we offer wholesale pricing for bulk orders. Please<br/>contact us at <strong>Info@esmelofficial.com</strong> for more information.</p>"
           }
         },
         "text_xgyARV": {
           "type": "text",
           "settings": {
-            "title": "How do I return an item that doesn’t fit?",
-            "content": "<p>If your item doesn’t fit, you can return it within the return window as long as it’s in its original condition. Please contact me with your order number, and I’ll guide you through the return process.</p>"
+            "title": "How can I leave feedback or a review?",
+            "content": "<p>We welcome your feedback! You can leave reviews on our<br/>product pages or contact us directly at <strong>Info@esmelofficial.com</strong> with any<br/>comments or suggestions.</p><p>If you have any other questions or need assistance, feel<br/>free to reach out to us at <strong>Info@esmelofficial.com</strong>. We're happy to help!</p>"
           }
         },
         "text_8hAEEE": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "title": "Are your sizes accurate? I’m concerned about fit.",
             "content": "<p>We try our best to provide accurate sizing information. You can refer to the size chart on the product page for guidance. If you're unsure, feel free to reach out, and I’ll be happy to assist with sizing details!</p>"
@@ -190,6 +198,7 @@
         },
         "text_KPzmYk": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "title": "Do you offer custom tailoring or alterations for your garments?",
             "content": "<p>Currently, we don’t offer in-house tailoring or alterations. However, we recommend visiting a local tailor for any adjustments needed after your purchase.</p>"
@@ -197,6 +206,7 @@
         },
         "text_mMiXrh": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "title": "Do you offer gift wrapping for my order?",
             "content": "<p>Yes, we do offer gift wrapping for a small additional fee. You can select the gift wrap option during checkout, and we’ll ensure it’s beautifully wrapped before shipment.</p>"
@@ -204,6 +214,7 @@
         },
         "text_VWVKtp": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "title": "Can I exchange my purchase for a different color or size?",
             "content": "<p>Yes, we offer exchanges within the return window. If you’d like to exchange your item for a different size or color, please reach out with your order number, and I’ll assist you with the process.</p>"
@@ -211,6 +222,7 @@
         },
         "text_nibDyG": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "title": "Are there any seasonal collections or limited edition items available?",
             "content": "<p>Yes, we regularly release seasonal and limited edition collections. Be sure to subscribe to our newsletter or follow us on social media to stay updated on exclusive launches!</p>"
@@ -218,6 +230,7 @@
         },
         "text_TJtQ8k": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "title": "I received the wrong item. What should I do?",
             "content": "<p>I’m very sorry for the mix-up. Please send me a photo of the item you received, and I’ll arrange for an exchange or return as soon as possible.</p>"
@@ -225,6 +238,7 @@
         },
         "text_jyLVAr": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "title": "How can I use a promo code for my order?",
             "content": "<p>You can enter your promo code during checkout in the “Promo Code” section. The discount will be applied to your order once the code is validated. Let me know if you have any issues!</p>"
@@ -232,6 +246,7 @@
         },
         "text_TUBLyP": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "title": "Do you offer a loyalty or rewards program?",
             "content": "<p>Currently, we don’t have a formal loyalty program, but we do offer discounts from time to time. Be sure to sign up for our newsletter so you won’t miss out on special offers!</p>"
@@ -239,6 +254,7 @@
         },
         "text_Y9wx9y": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "title": "How do I know if the color of the suit will look like in person as it does online?",
             "content": "<p>We make every effort to ensure our online images are accurate, but colors may vary slightly due to monitor settings. If you're unsure, feel free to reach out, and I can provide additional photos or more details about the fabric and color.</p>"
@@ -248,6 +264,7 @@
       "block_order": [
         "accordion_block_1_1",
         "text_DhU6Qt",
+        "text_4PqXBW",
         "text_B6WCe3",
         "text_FKjWVi",
         "text_RPEmXN",

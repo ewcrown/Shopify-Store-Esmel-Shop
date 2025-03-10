@@ -9,6 +9,84 @@
  */
 {
   "sections": {
+    "section_slideshow_ANHkQQ": {
+      "type": "section-slideshow",
+      "blocks": {
+        "image_zb6pnF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WEB_Launching-01.png",
+            "mobile_image": "shopify://shop_images/Mobile_Launching-01_3f80a548-491d-4fc3-84a3-9794697b7380.png",
+            "overlay_opacity": 15,
+            "overlay_color": "#000000",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-left",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "shopify://collections/luxe-lawn-25",
+            "button_color": "btn--black",
+            "button_style": "btn"
+          }
+        },
+        "image_gdxPcB": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Live_Now_01_e78c371e-8092-4c6e-9b50-56bf7ca91b50.png",
+            "mobile_image": "shopify://shop_images/Mobile_Live-02_471e6c09-d89e-4deb-a8b2-a42610c4664c.png",
+            "overlay_opacity": 15,
+            "overlay_color": "#000000",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-left",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "shopify://collections/luxe-lawn-25",
+            "button_color": "btn--black",
+            "button_style": "btn"
+          }
+        },
+        "image_yM49f9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Live_Now-02_c2aa7e47-f336-4e9e-ac51-e6751ee2eaeb.png",
+            "mobile_image": "shopify://shop_images/Mobile_Live-01_292bfb92-5523-4e41-bd98-08c06ba63c6a.png",
+            "overlay_opacity": 15,
+            "overlay_color": "#000000",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--bottom-left",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "shopify://collections/luxe-lawn-25",
+            "button_color": "btn--white",
+            "button_style": "btn"
+          }
+        }
+      },
+      "block_order": [
+        "image_zb6pnF",
+        "image_gdxPcB",
+        "image_yM49f9"
+      ],
+      "settings": {
+        "autoplay": false,
+        "autoplay_speed": 8,
+        "preload_first_image": false,
+        "height": "use_screen_full",
+        "color_bg": "palette--dark bg--invert",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "hero": {
       "type": "section-hero",
       "blocks": {
@@ -61,6 +139,7 @@
         "banner-text",
         "banner-button"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/35A4949.jpg",
         "mobile_image": "shopify://shop_images/35A4850.jpg",
@@ -91,7 +170,7 @@
         "kicker": "Introducing",
         "heading": "New Arrival",
         "text_color": "text--white",
-        "link_text": "View products",
+        "link_text": "Explore Now",
         "link": "shopify://collections/feature-collection",
         "button_color": "btn--black",
         "button_style": "btn",
@@ -99,7 +178,8 @@
         "grid_small": 1.2,
         "limit": 10,
         "bg": "palette--light bg--neutral",
-        "video_bg": "shopify://files/videos/WhatsApp Video 2025-02-13 at 21.19.42.mp4",
+        "video_bg": "shopify://files/videos/Desktop Video 1652x1676_135cd2e8-3d0a-4e6b-bd99-38c7f88d51fe.mp4",
+        "mobile_video_bg": "shopify://files/videos/Mobile Video 373x373.mp4",
         "object_position": "center-center",
         "width": "wrapper--none",
         "padding_top": 36,
@@ -151,11 +231,11 @@
             "overlay_color": "#ffffff",
             "enable_overlay_text": false,
             "kicker": "",
-            "title": "COLLECTION",
+            "title": "",
             "richtext": "",
             "text_align": "align--middle-center",
             "text_color": "text--white",
-            "link_text": "Shop Now",
+            "link_text": "Explore Now",
             "link": "",
             "button_color": "btn--black",
             "button_style": "btn"
@@ -169,11 +249,11 @@
             "overlay_color": "#000000",
             "enable_overlay_text": false,
             "kicker": "",
-            "title": "COLLECTION",
+            "title": "",
             "richtext": "",
             "text_align": "align--middle-center",
             "text_color": "text--white",
-            "link_text": "Shop Now",
+            "link_text": "Explore Now",
             "link": "",
             "button_color": "btn--black",
             "button_style": "btn"
@@ -194,51 +274,14 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
-    },
-    "section_slideshow_ANHkQQ": {
-      "type": "section-slideshow",
-      "blocks": {
-        "image_zb6pnF": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/35A5010.jpg",
-            "overlay_opacity": 15,
-            "overlay_color": "#000000",
-            "enable_overlay_text": false,
-            "kicker": "Lorem ipsum dolor sit amet",
-            "title": "",
-            "richtext": "",
-            "text_align": "align--middle-left",
-            "text_color": "text--white",
-            "link_text": "SHOP NOW",
-            "link": "",
-            "button_color": "btn--black",
-            "button_style": "btn"
-          }
-        }
-      },
-      "block_order": [
-        "image_zb6pnF"
-      ],
-      "disabled": true,
-      "settings": {
-        "autoplay": false,
-        "autoplay_speed": 8,
-        "preload_first_image": false,
-        "height": "use_screen_two_thirds",
-        "color_bg": "palette--dark bg--invert",
-        "width": "wrapper--none",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
     }
   },
   "order": [
+    "section_slideshow_ANHkQQ",
     "hero",
     "collection_split_pB3MUC",
     "section_collection_slider_Lgym7A",
     "product-grid",
-    "custom",
-    "section_slideshow_ANHkQQ"
+    "custom"
   ]
 }

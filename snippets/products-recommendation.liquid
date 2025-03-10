@@ -1,7 +1,5 @@
 <!-- /snippets/products-recommendation.liquid -->
-{%- if recommendations.performed -%}
-  {%- if recommendations.products_count > 0 -%}
-    <div
+ <div
       class="flickity-grid flickity-disabled-mobile"
       data-carousel
       data-grid
@@ -15,8 +13,10 @@
         --grid-medium-items: 2;
         --grid-small-items: 1.5;"
       data-options='{"watchCSS": true}'>
+   
       <!-- /snippets/product-grid-item.liquid -->
-      {% for product in recommendations.products %}
+      {% for card_product in collections['luxe-lawn-25'].products %}
+        {% unless card_product.id == product.id %}
         {%- capture placeholder -%}
           product-{%- cycle '1', '2', '3', '4', '5', '6' -%}
         {%- endcapture -%}
@@ -26,16 +26,15 @@
           data-item>
           {%
             render 'product-grid-item',
-              product: product,
+              product: card_product,
               placeholder: placeholder,
               columns_desktop: section.settings.grid_large,
               columns_tablet: section.settings.grid_medium,
               columns_mobile: section.settings.grid_mobile
           %}
+          
         </div>
+{% endunless %}
       {% endfor %}
     </div>
-  {%- endif -%}
-{%- else -%}
-  <div class="related__placeholder"></div>
-{%- endif -%}
+

@@ -25,6 +25,7 @@
         <div class="slideshow__slide section--image {{ block.settings.text_color }}"
         {% if section.settings.width == "wrapper--none" and section.settings.padding_top == 0 %} data-overlay-header {% endif %}
           id="aos-{{ block.id }}"
+          onclick="window.location.href = '{{ block.settings.link }}'"
           data-slideshow-index="{{ forloop.index0 }}"
           {{ block.shopify_attributes }}>
           <div class="hero__content__wrapper {{ block.settings.text_align }}">

@@ -46,7 +46,7 @@
             <div class="tab-content tab-content-0 current tabs__recommendation" data-tab-index="0">
               <div data-related-section data-limit="{{ related_limit }}" data-layout-desktop="{{ layout_number_related }}" data-layout-tablet="{{ tablet_layout_number }}" data-layout-mobile="{{ mobile_layout_number }}" data-product-id="{{ product.id }}">
                 <flickity-carousel>
-                  {%- render 'products-recommendation', product: product, limit: related_limit -%}
+                  {%- render 'products-recommendation' -%}
 
                   <div class="custom-scrollbar small-down--show" data-custom-scrollbar>
                     <div class="custom-scrollbar__track" data-custom-scrollbar-track></div>

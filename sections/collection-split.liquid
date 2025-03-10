@@ -74,7 +74,15 @@
           {%- if section.settings.video_bg != nil -%}
             <div class="video-autoplay-wrapper">
               {%- assign video_styles = section.settings.object_position | replace: '-', ' ' | prepend: 'object-position: ' -%}
+              <div {% if section.settings.mobile_video_bg != blank %}class="mobile-hide"{% endif %}>
               {{ section.settings.video_bg | video_tag: autoplay: true, loop: true, muted: true, controls: false, playsinline: true, style: video_styles, data-video-autoplay: '' }}
+              </div>
+            {% if section.settings.mobile_video_bg != blank %}
+              <div class="desktop-hide">
+              {{ section.settings.mobile_video_bg | video_tag: autoplay: true, loop: true, muted: true, controls: false, playsinline: true, style: video_styles, data-video-autoplay: '' }}
+              </div>
+              {% endif %}
+                
             </div>
           {%- else -%}
             {% assign alt = section.settings.image.alt | default: 'Collection Image' %}
@@ -311,6 +319,11 @@
       "type": "video",
       "id": "video_bg",
       "label": "Video background"
+    },
+    {
+      "type": "video",
+      "id": "mobile_video_bg",
+      "label": "Mobile Video background"
     },
     {
       "type": "select",

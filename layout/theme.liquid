@@ -13,7 +13,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="{{ settings.color_secondary }}">
+  <meta name="theme-color" content="#000000">
   {%- if canonical_url != blank -%}
     <link rel="canonical" href="{{ canonical_url }}">
   {%- endif -%}
@@ -225,7 +225,21 @@
   <!-- Shopify app scripts =========================================================== -->
   {{ content_for_header }}
 </head>
-
+<style>
+  .accordion-content__entry h3 strong {
+    font-weight: 600 !important;
+    padding-bottom: 0.5rem;
+    display: block;
+}
+.product__grid__price,.shopify-product-form{display:none;}
+.body-size-5{font-size: inherit !important}
+.product__badge {
+    font-weight: 400;
+}
+div#shopify-section-sections--17444030021743__header {
+    z-index: 0;
+}
+</style>
 
 <body id="{{ page_title | handle }}" class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} {{ settings.default_background }}{% if customer %} customer-logged-in{% endif %}">
 

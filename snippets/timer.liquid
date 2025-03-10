@@ -1,0 +1,160 @@
+<style>
+     {% if template.name == 'collection' %}
+  .countdown-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #3E2C24;
+    margin-top: 20px;
+}
+           .countdown-p {
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+.countdown-message {
+    font-size: 31px;
+}
+{% else %}
+.countdown-container {
+    text-align: left;
+    font-family: Arial, sans-serif;
+    color: #3E2C24;
+    margin-top: 20px;
+    /* position: relative;
+    top: -50px; */
+}
+    .countdown-p {
+    display: flex
+;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+.countdown-message {
+    font-size: 31px;
+}
+{% endif %}
+
+.countdown-heading {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: var(--FONT-STACK-HEADING);
+    font-style: var(--FONT-STYLE-HEADING);
+    font-weight: 500;
+    letter-spacing: var(--FONT-HEADING-LETTER-SPACING);
+    text-transform: var(--FONT-HEADING-TRANSFORM);
+    color: #333333;
+}
+
+
+    .countdown-box {
+        background-color: #333333;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        padding: 15px;
+        border-radius: 8px;
+        width: 70px;
+        text-align: center;
+        font-family: var(--FONT-STACK-HEADING);
+        font-style: var(--FONT-STYLE-HEADING);
+    }
+
+    .countdown-label {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 5px;
+         font-family: Proxima Nova, sans-serif !important;
+    }
+
+    .countdown-message {
+    color: #333333;
+    margin-top: 10px;
+    display: block;
+    font-family: Proxima Nova, sans-serif !important;
+    font-style: var(--FONT-STYLE-ACCENT);
+    /* font-weight: var(--FONT-WEIGHT-ACCENT); */
+    /* font-weight: var(--FONT-WEIGHT-ACCENT-BOLD); */
+    /* text-transform: var(--FONT-ACCENT-TRANSFORM); */
+    /* letter-spacing: var(--FONT-ACCENT-LETTER-SPACING); */
+}
+@media screen and (max-width: 768px) {
+    .countdown-heading {
+     font-size: 25px;
+      padding: 1rem      
+   }
+}
+
+@media screen and (max-width: 480px) {
+    .countdown-heading {
+     font-size: 20px;
+      padding: 1rem      
+   }
+}
+</style>
+
+<div class="countdown-container">
+   {% if template.name == 'collection' %}
+    <div class="countdown-heading">MON TRÉSOR LUXE LAWN'25 is Launching in :</div>
+{% endif %}
+    <div class="countdown-p">
+        <div>
+            <div class="countdown-box" id="hours">00</div>
+            <div class="countdown-label">Hours</div>
+        </div>
+        <div>
+            <div class="countdown-box" id="minutes">00</div>
+            <div class="countdown-label">Minutes</div>
+        </div>
+        <div>
+            <div class="countdown-box" id="seconds">00</div>
+            <div class="countdown-label">Seconds</div>
+        </div>
+    </div>
+
+    <div class="countdown-message">The wait is almost over!</div>
+</div>
+<script>
+    function setEndTime() {
+        // Set the end time to March 11, 2025, 3:00 PM UTC
+        const endTime = new Date(Date.UTC(2025, 2, 11, 15, 0, 0)); // Months are 0-indexed, so 2 is March
+        return endTime.getTime();
+    }
+
+    function updateTimerDisplay(timeLeft) {
+        const hours = Math.floor(timeLeft / 3600);
+        const minutes = Math.floor((timeLeft % 3600) / 60);
+        const seconds = timeLeft % 60;
+
+        document.getElementById('hours').innerText = String(hours).padStart(2, '0');
+        document.getElementById('minutes').innerText = String(minutes).padStart(2, '0');
+        document.getElementById('seconds').innerText = String(seconds).padStart(2, '0');
+    }
+
+    function runCountdown() {
+        const endTime = setEndTime();
+
+        function updateTimer() {
+            const now = Date.now();
+            const timeLeft = Math.floor((endTime - now) / 1000);
+
+            if (timeLeft <= 0) {
+                updateTimerDisplay(0);
+                clearInterval(timerInterval);
+                document.getElementById('timer').innerText = "Timer has ended!";
+            } else {
+                updateTimerDisplay(timeLeft);
+            }
+        }
+
+        updateTimer();
+        const timerInterval = setInterval(updateTimer, 1000);
+    }
+
+    runCountdown();
+</script>

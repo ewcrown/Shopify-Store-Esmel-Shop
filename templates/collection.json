@@ -9,8 +9,24 @@
  */
 {
   "sections": {
+    "section_liquid_JF4UDH": {
+      "type": "section-liquid",
+      "custom_css": [
+        ".col-timer {padding-top: 4rem; text-align: center;}",
+        ".timer-ai {font-size: 110px;}",
+        ".col-timer h5 {font-size: 3rem; font-weight: bold;}",
+        " /* Responsive Design */@media (max-width: 1200px) {.timer-ai {font-size: 90px; } .col-timer h5 {font-size: 2.5rem; }}",
+        "@media (max-width: 992px) {.timer-ai {font-size: 70px; } .col-timer h5 {font-size: 2rem; }}",
+        "@media (max-width: 768px) {.timer-ai {font-size: 50px; } .col-timer h5 {font-size: 1.8rem; }}",
+        "@media (max-width: 576px) {.timer-ai {font-size: 40px; } .col-timer h5 {font-size: 1.5rem; }}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"col-timer\">\n{% render 'timer' %}\n\n</div>"
+      }
+    },
     "hero": {
       "type": "collection-hero",
+      "disabled": true,
       "settings": {
         "text_align": "align--middle-center",
         "show_title": true,
@@ -87,6 +103,7 @@
     }
   },
   "order": [
+    "section_liquid_JF4UDH",
     "hero",
     "subcollections",
     "main"
