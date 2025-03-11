@@ -29,9 +29,8 @@
         },
         "announce_shipping": {
           "type": "message",
-          "disabled": true,
           "settings": {
-            "message": "Spend ||amount|| more for free shipping",
+            "message": "DELIVERY BEFORE EID IS AVAILABLE",
             "target_url_enabled": false,
             "target_url": "",
             "target_referrer_enabled": false,

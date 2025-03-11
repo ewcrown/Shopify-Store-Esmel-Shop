@@ -1,0 +1,13 @@
+<script>
+if (!sessionStorage.getItem('redirected')) {
+    fetch('https://api.country.is')
+        .then(response => response.json())
+        .then(data => {
+            if (data.country !== 'PK') {
+                sessionStorage.setItem('redirected', 'true');
+                window.location.href = 'https://esmelofficial.com/en-int';
+            }
+        })
+        .catch(error => console.error('Error fetching IP data:', error));
+}
+</script>

@@ -14,6 +14,7 @@
       "blocks": {
         "image_zb6pnF": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/WEB_Launching-01.png",
             "mobile_image": "shopify://shop_images/Mobile_Launching-01_3f80a548-491d-4fc3-84a3-9794697b7380.png",
@@ -26,14 +27,13 @@
             "text_align": "align--middle-left",
             "text_color": "text--white",
             "link_text": "",
-            "link": "shopify://collections/luxe-lawn-25",
+            "link": "",
             "button_color": "btn--black",
             "button_style": "btn"
           }
         },
         "image_gdxPcB": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Live_Now_01_e78c371e-8092-4c6e-9b50-56bf7ca91b50.png",
             "mobile_image": "shopify://shop_images/Mobile_Live-02_471e6c09-d89e-4deb-a8b2-a42610c4664c.png",
@@ -45,7 +45,7 @@
             "richtext": "",
             "text_align": "align--middle-left",
             "text_color": "text--white",
-            "link_text": "",
+            "link_text": "Shop Now",
             "link": "shopify://collections/luxe-lawn-25",
             "button_color": "btn--black",
             "button_style": "btn"
@@ -160,7 +160,7 @@
     "collection_split_pB3MUC": {
       "type": "collection-split",
       "settings": {
-        "collection": "feature-collection",
+        "collection": "luxe-lawn-25",
         "product_list": [],
         "image": "shopify://shop_images/35A2333.jpg",
         "sticky_image_enable": true,
@@ -170,8 +170,8 @@
         "kicker": "Introducing",
         "heading": "New Arrival",
         "text_color": "text--white",
-        "link_text": "Explore Now",
-        "link": "shopify://collections/feature-collection",
+        "link_text": "Shop Now",
+        "link": "shopify://collections/luxe-lawn-25",
         "button_color": "btn--black",
         "button_style": "btn",
         "grid_large": 2,
@@ -235,8 +235,8 @@
             "richtext": "",
             "text_align": "align--middle-center",
             "text_color": "text--white",
-            "link_text": "Explore Now",
-            "link": "",
+            "link_text": "Shop Now",
+            "link": "shopify://collections/luxe-lawn-25",
             "button_color": "btn--black",
             "button_style": "btn"
           }
@@ -253,8 +253,8 @@
             "richtext": "",
             "text_align": "align--middle-center",
             "text_color": "text--white",
-            "link_text": "Explore Now",
-            "link": "",
+            "link_text": "Shop Now",
+            "link": "shopify://collections/luxe-lawn-25",
             "button_color": "btn--black",
             "button_style": "btn"
           }

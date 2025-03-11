@@ -30,7 +30,6 @@
         },
         "price": {
           "type": "price",
-          "disabled": true,
           "settings": {
             "price_size": 5,
             "padding_bottom": 40
@@ -54,7 +53,6 @@
         },
         "quantity": {
           "type": "quantity",
-          "disabled": true,
           "settings": {
             "show_quantity": true,
             "padding_bottom": 20
@@ -81,6 +79,7 @@
         },
         "liquid_tkixwP": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "{% render 'timer' %}"
           }
@@ -101,12 +100,12 @@
             "read_more": false,
             "icon_description": "",
             "description_expanded": true,
-            "title_1": "",
+            "title_1": "dispatch Timeline",
             "icon_name_1": "",
-            "raw_content_1": "",
-            "title_2": "",
+            "raw_content_1": "<p>Unstitched : 3-5 working days<br/>Stitched: Dispatch before 20th (delivery before Eid)</p>",
+            "title_2": "Disclaimer",
             "icon_name_2": "",
-            "raw_content_2": "",
+            "raw_content_2": "<p>The fabric pattern/laces, patchwork, and handmade details may vary.<br/>Actual colors of the outfit may also vary from the colors being displayed on your device.<br/><br/>All laces used for finishing of the stitched outfit especially the dupatta or trousers may vary from the shoot.</p>",
             "title_3": "",
             "icon_name_3": "",
             "raw_content_3": "",
@@ -121,8 +120,9 @@
         },
         "text_NMgpyX": {
           "type": "text",
+          "disabled": true,
           "settings": {
-            "title": "<p>Note : Stitching is also available for delivery before eid</p>",
+            "title": "<p>dispatch</p>",
             "padding_bottom": 20
           }
         },

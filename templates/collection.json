@@ -11,6 +11,7 @@
   "sections": {
     "section_liquid_JF4UDH": {
       "type": "section-liquid",
+      "disabled": true,
       "custom_css": [
         ".col-timer {padding-top: 4rem; text-align: center;}",
         ".timer-ai {font-size: 110px;}",

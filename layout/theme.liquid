@@ -69,7 +69,7 @@
   {{ 'font-settings.css' | asset_url | stylesheet_tag: preload: true }}
 
   {% render 'css-variables' %}
-
+  {% render 'meta' %}
   {{ 'theme.css' | asset_url | stylesheet_tag: preload: true }}
   {{ 'ew-styles.css' | asset_url | stylesheet_tag: preload: true }}
 
@@ -170,7 +170,7 @@
   <!-- Theme Javascript ============================================================== -->
   <script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
-
+  
   <script>
     (function () {
       function onPageShowEvents() {
@@ -223,6 +223,13 @@
     https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     " rel="stylesheet">
   <!-- Shopify app scripts =========================================================== -->
+ 
+
+
+
+
+
+    
   {{ content_for_header }}
 </head>
 <style>
@@ -231,13 +238,16 @@
     padding-bottom: 0.5rem;
     display: block;
 }
-.product__grid__price,.shopify-product-form{display:none;}
+/* .product__grid__price,.shopify-product-form{display:none;} */
 .body-size-5{font-size: inherit !important}
 .product__badge {
     font-weight: 400;
 }
 div#shopify-section-sections--17444030021743__header {
     z-index: 0;
+}
+.currency-switcher,.subfooter__select.subfooter__select--currency.js {
+    display: none;
 }
 </style>
 

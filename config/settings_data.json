@@ -82,12 +82,10 @@
         "disabled": false,
         "settings": {}
       },
-      "6602339225533207934": {
-        "type": "shopify://apps/flipbook-lite/blocks/flipbook/1caca374-c9d9-4f5f-805c-3b739d18b5a1",
+      "18423266570658624584": {
+        "type": "shopify://apps/beast-currency-converter/blocks/doubly/267afa86-a419-4d5b-a61b-556038e7294d",
         "disabled": false,
-        "settings": {
-          "mode": "include"
-        }
+        "settings": {}
       }
     }
   },

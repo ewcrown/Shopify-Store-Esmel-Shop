@@ -116,7 +116,7 @@
     {%- if custom_badge -%}
       <div class="product__badge product__badge--custom product__badge--{{ custom_badge_content | strip_html | handle }}">{{ custom_badge_content }}</div>
     {%- elsif sellout_badge -%}
-      <div class="product__badge product__badge--sold">coming soon</div>
+      <div class="product__badge product__badge--sold">{{ 'products.product.sold_out' | t }}</div>
     {%- elsif sale_badge -%}
       <div class="product__badge product__badge--sale">{{ sale_badge_content }}</div>
     {%- endif -%}

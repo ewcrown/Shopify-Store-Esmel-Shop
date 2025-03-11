@@ -10,10 +10,19 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Lightbox Functionality
-function openLightbox(src) {
-  document.getElementById("lightbox-img").src = src;
-  document.getElementById("lightbox").style.display = "flex";
+function openLightbox(src, isVideo = false) {
+  document.getElementById('lightbox').style.display = "flex";
+
+  if (isVideo) {
+    document.getElementById('lightbox-img').style.display = "none";
+    document.getElementById('lightbox-video').innerHTML = `<video controls autoplay><source src="${src}" type="video/mp4"></video>`;
+  } else {
+    document.getElementById('lightbox-video').innerHTML = "";
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox-img').style.display = "block";
+  }
 }
 function closeLightbox() {
-  document.getElementById("lightbox").style.display = "none";
+  document.getElementById('lightbox').style.display = "none";
+  document.getElementById('lightbox-video').innerHTML = "";
 }
