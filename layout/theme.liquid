@@ -233,6 +233,10 @@
   {{ content_for_header }}
 </head>
 <style>
+  .cart__message-success{display:none !important;}
+.cart__message.is-success .cart__message-success~.cart__message-default {
+    display: block;
+}
   .accordion-content__entry h3 strong {
     font-weight: 600 !important;
     padding-bottom: 0.5rem;
@@ -249,6 +253,16 @@ div#shopify-section-sections--17444030021743__header {
 .currency-switcher,.subfooter__select.subfooter__select--currency.js {
     display: none;
 }
+#shopify-block-AN05SU0xrOTlqN3l3a__esc_size_charts_app_block_Mty44i {
+  padding-bottom: 1rem;
+}
+  @media only screen and (max-width: 600px) {
+  .esc-size-guide--popup .modal_container .modal_content {
+    padding: 20px;
+    width: 400px;
+}
+}
+
 </style>
 
 <body id="{{ page_title | handle }}" class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} {{ settings.default_background }}{% if customer %} customer-logged-in{% endif %}">
@@ -284,6 +298,7 @@ div#shopify-section-sections--17444030021743__header {
 
 
   <!-- And above this comment line ================================================== -->
+  <div class="ew-size-chart-lightbox" data-size-chart-lightbox hidden="true"></div>
   <script src="{{ 'ew-script.js' | asset_url }}"></script>
 </body>
 </html>

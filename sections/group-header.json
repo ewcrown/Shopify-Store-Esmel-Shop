@@ -14,19 +14,6 @@
     "announcement": {
       "type": "announcement",
       "blocks": {
-        "announce_text": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p><strong>Make an announcement</strong> | More info</p>",
-            "target_url_enabled": false,
-            "target_url": "",
-            "target_referrer_enabled": false,
-            "target_referrer": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
         "announce_shipping": {
           "type": "message",
           "settings": {
@@ -41,7 +28,6 @@
         }
       },
       "block_order": [
-        "announce_text",
         "announce_shipping"
       ],
       "settings": {
@@ -105,8 +91,8 @@
         "logo_padding": 10,
         "logo_text_size": 5,
         "location_url": "shopify://pages/contact",
-        "phone_number": "+23324031",
-        "email_address": "test1@test.com",
+        "phone_number": "04232301093",
+        "email_address": "Info@esmelofficial.com",
         "main_menu_linklist": "main-menu",
         "mobile_menu_linklist": "",
         "full_width": true,

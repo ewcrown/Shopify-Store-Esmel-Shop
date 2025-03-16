@@ -1,0 +1,17 @@
+{% if product.metafields.custom.size_chart_image != blank %}
+  <div class="ew-size-chart-button-wrap">
+    <button class="ew-size-chart--button" 
+            data-size-chart-lightbox 
+            data-image="{{ product.metafields.custom.size_chart_image | img_url: 'master' }}">
+      Size Guide
+    </button>
+  </div>
+  
+  <div class="ew-size-chart-lightbox" data-size-chart-lightbox hidden>
+    <div class="ew-size-chart-lightbox-content">
+      <button class="ew-size-chart-lightbox-close">&times;</button>
+      <img src="" alt="Size Chart" class="ew-size-chart-image">
+    </div>
+  </div>
+  {% endif %}
+  

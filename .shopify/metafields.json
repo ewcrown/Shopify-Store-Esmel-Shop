@@ -19,6 +19,16 @@
         "name": "boolean",
         "category": "TRUE_FALSE"
       }
+    },
+    {
+      "key": "size_chart_image",
+      "namespace": "custom",
+      "name": "Size Chart Image",
+      "description": "",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
     }
   ],
   "variant": [

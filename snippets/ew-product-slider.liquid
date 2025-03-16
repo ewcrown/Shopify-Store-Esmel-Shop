@@ -9,7 +9,7 @@
                 <img src="{{ media_item.src | image_url: width: 1000 }}" alt="{{ media_item.alt }}" onclick="openLightbox(this.src)">
               {% elsif media_item.media_type == 'video' %}
                 <div class="ew-video-slide">
-                  {{ media_item | video_tag: controls: true, autoplay: false, loop: false, muted: false }}
+                  {{ media_item | video_tag: controls: false, autoplay: true, loop: true, muted: true }}
                 </div>
               {% endif %}
             </div>

@@ -58,14 +58,6 @@
             "padding_bottom": 20
           }
         },
-        "kiwi_size_chart_recommender_kiwi_sizing_pMPnX7": {
-          "type": "shopify://apps/kiwi-size-chart-recommender/blocks/kiwiSizing/b7369922-bf15-44ce-a121-a22a8fcbc4b0",
-          "settings": {
-            "product": "{{product}}",
-            "waitForElementSelector": "",
-            "waitForElementDelay": 5
-          }
-        },
         "sizes-remaining": {
           "type": "size-remaining",
           "settings": {
@@ -77,12 +69,24 @@
             "padding_bottom": 0
           }
         },
+        "esc_size_charts_app_block_Mty44i": {
+          "type": "shopify://apps/esc-size-charts/blocks/app-block/daa9a1f8-04ef-4369-ae22-966a9c435d5f",
+          "settings": {
+            "widget_type": "button",
+            "force_background": true,
+            "btn_text": "Size Guide"
+          }
+        },
         "liquid_tkixwP": {
           "type": "liquid",
           "disabled": true,
           "settings": {
             "custom_liquid": "{% render 'timer' %}"
           }
+        },
+        "sizechart_WrHxPQ": {
+          "type": "sizechart",
+          "settings": {}
         },
         "buttons": {
           "type": "add-buttons",
@@ -162,9 +166,10 @@
         "variants",
         "subscriptions",
         "quantity",
-        "kiwi_size_chart_recommender_kiwi_sizing_pMPnX7",
         "sizes-remaining",
+        "esc_size_charts_app_block_Mty44i",
         "liquid_tkixwP",
+        "sizechart_WrHxPQ",
         "buttons",
         "description",
         "text_NMgpyX",
@@ -372,20 +377,6 @@
     },
     "1739277965d01073b9": {
       "type": "apps",
-      "blocks": {
-        "kiwi_size_chart_recommender_kiwi_sizing_YmyiRp": {
-          "type": "shopify://apps/kiwi-size-chart-recommender/blocks/kiwiSizing/b7369922-bf15-44ce-a121-a22a8fcbc4b0",
-          "disabled": true,
-          "settings": {
-            "product": "{{product}}",
-            "waitForElementSelector": "",
-            "waitForElementDelay": 5
-          }
-        }
-      },
-      "block_order": [
-        "kiwi_size_chart_recommender_kiwi_sizing_YmyiRp"
-      ],
       "settings": {
         "text_color": "text--neutral",
         "bg": "palette--light bg--neutral",

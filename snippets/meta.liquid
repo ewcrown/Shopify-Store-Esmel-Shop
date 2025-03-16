@@ -5,7 +5,21 @@ if (!sessionStorage.getItem('redirected')) {
         .then(data => {
             if (data.country !== 'PK') {
                 sessionStorage.setItem('redirected', 'true');
+                setTimeout(() => {
+                    document.querySelectorAll('.money').forEach(element => {
+                        const currencyUSD = element.getAttribute('data-currency-usd');
+                        if (currencyUSD) {
+                            element.textContent = currencyUSD;
+                        }
+                        else
+                        {
+                               element.textContent = '';
+                        }
+                    });
+                }, 1000);
+
                 window.location.href = 'https://esmelofficial.com/en-int';
+              
             }
         })
         .catch(error => console.error('Error fetching IP data:', error));

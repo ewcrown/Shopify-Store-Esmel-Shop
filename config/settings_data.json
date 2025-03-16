@@ -66,9 +66,9 @@
     "product_grid_show_rating": false,
     "product_grid_show_rating_count": false,
     "variant_form": "auto",
-    "cart_style": "drawer",
-    "social_facebook_link": "#",
-    "social_instagram_link": "#",
+    "cart_style": "compatible",
+    "social_facebook_link": "https://www.facebook.com/esmelofficial",
+    "social_instagram_link": "https://www.instagram.com/esmelofficial",
     "currency_code_enable": false,
     "content_for_index": [],
     "blocks": {
@@ -82,8 +82,8 @@
         "disabled": false,
         "settings": {}
       },
-      "18423266570658624584": {
-        "type": "shopify://apps/beast-currency-converter/blocks/doubly/267afa86-a419-4d5b-a61b-556038e7294d",
+      "3294164036280357830": {
+        "type": "shopify://apps/mlv-auto-currency-switcher/blocks/mlveda-currencies-head/92ab730f-097e-4571-b27c-3f449e098ca3",
         "disabled": false,
         "settings": {}
       }
