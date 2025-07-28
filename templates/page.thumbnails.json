@@ -1,0 +1,79 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "kicker": "",
+        "kicker_size": 3,
+        "show_title": true,
+        "title_size": 8,
+        "show_content": true,
+        "content_size": 5,
+        "align_text": "text-left",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_gallery_RgbL3t": {
+      "type": "section-gallery",
+      "blocks": {
+        "image_d4GC8D": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2025-06-20_at_5.13.31_PM.png",
+            "link": "/pages/lookbook"
+          }
+        },
+        "image_WyA7Cj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2025-06-20_at_5.09.05_PM.png",
+            "link": "/pages/nouveau-chapitre"
+          }
+        },
+        "image_WN9RjT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2025-06-26_at_3.16.20_AM.png",
+            "link": "/pages/lumiere-dete-pret"
+          }
+        }
+      },
+      "block_order": [
+        "image_d4GC8D",
+        "image_WyA7Cj",
+        "image_WN9RjT"
+      ],
+      "settings": {
+        "scale_image": true,
+        "wh_ratio": 0.7,
+        "bg": "palette--light bg--neutral",
+        "add_gutters": true,
+        "progress_bar": "mobile",
+        "grid_large": 3,
+        "grid_medium": 2,
+        "grid_mobile": 1,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_gallery_RgbL3t"
+  ]
+}

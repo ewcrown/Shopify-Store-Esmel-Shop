@@ -13492,7 +13492,7 @@ body .shopify-email-marketing-confirmation__container {
 }
 .theme__header {
   position: absolute;
-  z-index: 6000;
+  z-index: 1;
   width: 100%;
   background-color: var(--bg);
   color: var(--text);
@@ -25110,3 +25110,17 @@ strong {
     font-weight: 700 !important;
 }
 
+.quoil-product-star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quoil-product-star svg {
+  width: 16px !important;
+  height: 15px !important;
+}
+
+.quoil-product-star span {
+  font-size: 12px !important;
+}

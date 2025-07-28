@@ -33,6 +33,7 @@
         "contact-block-kicker",
         "contact-block-heading"
       ],
+      "custom_css": [],
       "settings": {
         "image": "shopify://shop_images/35A5010.jpg",
         "mobile_image": "shopify://shop_images/35A2333.jpg",
@@ -106,11 +107,21 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "section_html_wy4xeB": {
+      "type": "section-html",
+      "settings": {
+        "html": "<style>.main-content {\n  margin-top: 2rem;\n}</style>",
+        "width": "wrapper",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "hero",
     "main",
-    "contact"
+    "contact",
+    "section_html_wy4xeB"
   ]
 }

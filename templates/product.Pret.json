@@ -22,7 +22,7 @@
             "padding_bottom": 0
           }
         },
-        "quoli_reviews_ugc_product_review_7mLbWP": {
+        "quoli_reviews_ugc_product_review_axzyrG": {
           "type": "shopify://apps/quoli-reviews-ugc/blocks/product-review/baf7b241-e443-4879-b3d4-360440b03895",
           "settings": {
             "stylerating": "standard",
@@ -100,7 +100,7 @@
             "padding_bottom": 20
           }
         },
-        "quoli_reviews_ugc_quoli_nuggets_slider_aL3KBm": {
+        "quoli_reviews_ugc_quoli_nuggets_slider_Q6FDLm": {
           "type": "shopify://apps/quoli-reviews-ugc/blocks/quoli-nuggets-slider/baf7b241-e443-4879-b3d4-360440b03895",
           "settings": {
             "hide_review_rating": true,
@@ -112,7 +112,7 @@
             "auto_speed": "5",
             "show_border": false,
             "border_radius": 5,
-            "background_color": "#ffffff",
+            "background_color": "#FFFFFF",
             "text_color": "#121212",
             "name_color": "#121212",
             "icon_color": "#121212",
@@ -131,7 +131,7 @@
             "description_expanded": true,
             "title_1": "dispatch Timeline",
             "icon_name_1": "",
-            "raw_content_1": "<p>Unstitched : 3-5 working days<br/>Stitched: 5-7 working days</p>",
+            "raw_content_1": "<p>5-7 working days</p>",
             "title_2": "Disclaimer",
             "icon_name_2": "",
             "raw_content_2": "<p>The fabric pattern/laces, patchwork, and handmade details may vary.<br/>Actual colors of the outfit may also vary from the colors being displayed on your device.<br/><br/>All laces used for finishing of the stitched outfit especially the dupatta or trousers may vary from the shoot.</p>",
@@ -186,7 +186,7 @@
       },
       "block_order": [
         "title",
-        "quoli_reviews_ugc_product_review_7mLbWP",
+        "quoli_reviews_ugc_product_review_axzyrG",
         "liquid_Hq7LYm",
         "price",
         "variants",
@@ -196,7 +196,7 @@
         "liquid_tkixwP",
         "sizechart_WrHxPQ",
         "buttons",
-        "quoli_reviews_ugc_quoli_nuggets_slider_aL3KBm",
+        "quoli_reviews_ugc_quoli_nuggets_slider_Q6FDLm",
         "description",
         "text_NMgpyX",
         "upsell",
@@ -401,10 +401,10 @@
         "padding_bottom": 36
       }
     },
-    "1739277965d01073b9": {
+    "1751269165d62743de": {
       "type": "apps",
       "blocks": {
-        "quoli_reviews_ugc_quoli_pdp_kjzbxE": {
+        "quoli_reviews_ugc_quoli_pdp_qpbQP8": {
           "type": "shopify://apps/quoli-reviews-ugc/blocks/quoli-pdp/baf7b241-e443-4879-b3d4-360440b03895",
           "settings": {
             "categories_shown": "reviews,questions",
@@ -422,8 +422,18 @@
         }
       },
       "block_order": [
-        "quoli_reviews_ugc_quoli_pdp_kjzbxE"
+        "quoli_reviews_ugc_quoli_pdp_qpbQP8"
       ],
+      "settings": {
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1739277965d01073b9": {
+      "type": "apps",
       "settings": {
         "text_color": "text--neutral",
         "bg": "palette--light bg--neutral",
@@ -439,6 +449,7 @@
     "image-with-text-2",
     "section_list_collections_products_7aR4c6",
     "related",
+    "1751269165d62743de",
     "1739277965d01073b9"
   ]
 }

@@ -1,0 +1,318 @@
+<!-- Add to your head -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<style>
+  /* Custom dot colors */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+.slick-slider .slick-track, .slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slick-track:before, .slick-track:after {
+  display: table;
+  content: '';
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+[dir='rtl'] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
+/* Arrows */
+.slick-prev, .slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.slick-next {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    /* background: #fff url(https://www.mushq.pk/cdn/shop/t/46/assets/rtl.png) no-repeat center; */
+    background-size: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+.slick-prev {
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    /* background: #fff url(https://www.mushq.pk/cdn/shop/t/46/assets/ltr.png) no-repeat center; */
+    background-size: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 30px;
+    opacity: 1;
+    color: #333333;
+}
+/* Dots */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+.slick-dots li button:hover, .slick-dots li button:focus {
+  outline: none;
+}
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {
+  opacity: 1;
+}
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: black;
+}
+
+/* Slide styling */
+.your-slider div {
+  padding: 0 10px;
+}
+.your-slider img {
+  width: 100%;
+  height: auto;
+}
+</style>
+<!-- Esmel lookbookr HTML structure -->
+
+
+{% if page.handle == 'nouveau-chapitre' %}
+<div class="look-slider wrapper section-padding">
+    <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/1_735314ff-3ec0-4589-b295-1b610be262d4.png?v=1750422043" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/15.png?v=1750422037" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/19.png?v=1750422037" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/6_dd0c2efb-3e10-40a4-b0fe-ba0dcc588e2a.png?v=1750422037" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/10.png?v=1750422039" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/20.png?v=1750422039" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/8_5aceb178-2c3a-4905-b7bd-12a57c21cf72.png?v=1750422040" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/24.png?v=1750422040" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/18.png?v=1750422041" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/4_52376398-5162-4761-a5b3-426047fec512.png?v=1750422041" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/13.png?v=1750422041" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/2_4574a40b-7848-44f0-9a9f-efb16be01659.png?v=1750422041" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/22.png?v=1750422041" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/3_22c31e74-2385-44e5-af26-6c54732df69f.png?v=1750422041" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/23.png?v=1750422041" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/21.png?v=1750422042" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/9_97f6a932-6630-4bdb-9b1a-1ac856a80554.png?v=1750422042" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/12.png?v=1750422042" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/5_cdfab16f-8654-4d46-8a13-a240cf28d9f3.png?v=1750422042" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/7_26c30054-8ca9-4f79-84d1-c11c15f1b946.png?v=1750422042" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/17.png?v=1750422042" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/16.png?v=1750422043" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/11.png?v=1750422043" width="" height="" alt="Esmel lookbook"></div>
+</div>
+
+{% elsif page.handle == 'lumiere-dete-pret' %}
+<div class="look-slider wrapper section-padding">
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-06-25_at_12.13.05_PM.png?v=1750888206" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-06-25_at_12.13.31_PM.png?v=1750888206" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-06-25_at_12.13.24_PM.png?v=1750888206" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-06-25_at_12.14.06_PM.png?v=1750888205" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-06-25_at_12.13.57_PM.png?v=1750888206" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-06-25_at_12.13.13_PM.png?v=1750888206" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-06-25_at_12.13.46_PM.png?v=1750888206" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-06-25_at_12.14.12_PM.png?v=1750888207" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-06-25_at_12.14.02_PM.png?v=1750888206" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-06-25_at_12.13.52_PM.png?v=1750888206" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-06-25_at_12.13.43_PM.png?v=1750888204" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-06-25_at_12.14.00_PM.png?v=1750888204" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-06-25_at_12.13.28_PM.png?v=1750888203" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-06-25_at_12.13.19_PM.png?v=1750888203" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-06-25_at_12.14.08_PM.png?v=1750888203" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-06-25_at_12.13.49_PM.png?v=1750888202" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-06-25_at_12.13.54_PM.png?v=1750888202" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-06-25_at_12.13.54_PM.png?v=1750888202" width="" height="" alt="Esmel lookbook"></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-06-25_at_12.14.04_PM.png?v=1750888200" width="" height="" alt="Esmel lookbook"></div>
+</div>
+
+  {% else %}
+<div class="look-slider wrapper section-padding">
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-04-10_at_4.52.03_AM_f0a96198-ac70-4229-ae60-d8682cc134f8.png?v=1744247594" width="" height="" alt="Esmel lookbook "></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-04-10_at_4.54.16_AM_55d95430-82aa-4072-a80d-a26768f2c461.png?v=1744247594" width="" height="" alt="Esmel lookbook "></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-04-10_at_4.55.11_AM_e5760f56-7fc8-465c-a2ae-0484188e8dd2.png?v=1744247595" width="" height="" alt="Esmel lookbook "></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-04-10_at_4.55.26_AM_5e1746d5-4792-4194-928e-4cf5bbb4252a.png?v=1744247598" width="" height="" alt="Esmel lookbook "></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-04-10_at_4.55.41_AM_660a5770-2f21-4e3b-a051-5c1a80f092ca.png?v=1744247598" width="" height="" alt="Esmel lookbook "></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-04-10_at_4.53.18_AM_4ab763e3-efe2-476e-9430-4601cd079ce6.png?v=1744247598" width="" height="" alt="Esmel lookbook "></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-04-10_at_4.52.30_AM_24f8ad24-ef0c-4e92-acc4-4a1922ee8c07.png?v=1744247599" width="" height="" alt="Esmel lookbook "></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-04-10_at_4.52.47_AM_06503c6f-3976-4fa2-ad57-2ba1af95db8f.png?v=1744247599" width="" height="" alt="Esmel lookbook "></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-04-10_at_4.54.00_AM.png?v=1744243267" width="" height="" alt="Esmel lookbook "></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-04-10_at_4.53.37_AM_815c049d-00cf-4ae4-b843-0ce4f7c44450.png?v=1744247600" width="" height="" alt="Esmel lookbook "></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-04-10_at_4.53.01_AM_f2d853f7-7697-4895-9bbe-a9f7442b0963.png?v=1744247599" width="" height="" alt="Esmel lookbook "></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-04-10_at_4.54.36_AM_780e2016-d4cb-4a0e-9170-61d969622623.png?v=1744247599" width="" height="" alt="Esmel lookbook "></div>
+  <div><img src="https://cdn.shopify.com/s/files/1/0621/1741/2975/files/Screenshot_2025-04-10_at_4.52.30_AM_24f8ad24-ef0c-4e92-acc4-4a1922ee8c07.png?v=1744247599" width="" height="" alt="Esmel lookbook "></div>
+</div>
+{% endif %}  
+<!-- Add before closing body tag -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<!-- <script>
+$(document).ready(function(){
+  $('.look-slider').slick({
+    dots: true,
+    arrows: true,
+    infinite: true,
+    speed: 500,
+    fade: false, // Changed from true to false for side-by-side slides
+    cssEase: 'linear',
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+}); -->
+<!-- </script> -->

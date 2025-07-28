@@ -14,8 +14,21 @@
     "announcement": {
       "type": "announcement",
       "blocks": {
+        "text_t9QEtA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Any stitched order placed now will be processed after Eid</p>",
+            "target_url_enabled": false,
+            "target_url": "",
+            "target_referrer_enabled": false,
+            "target_referrer": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
         "announce_shipping": {
           "type": "message",
+          "disabled": true,
           "settings": {
             "message": "DELIVERY BEFORE EID IS AVAILABLE",
             "target_url_enabled": false,
@@ -28,8 +41,10 @@
         }
       },
       "block_order": [
+        "text_t9QEtA",
         "announce_shipping"
       ],
+      "disabled": true,
       "settings": {
         "text_size": 3,
         "layout": "slider",
@@ -66,7 +81,7 @@
           "settings": {
             "position": "2",
             "wh_ratio": 2,
-            "image": "shopify://shop_images/35A3311.jpg",
+            "image": "shopify://shop_images/Mega_Menu-590x275.png",
             "wide_element": false,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
@@ -74,7 +89,7 @@
             "title_color": "text--white",
             "button_style": "text-button",
             "link_text": "Shop All",
-            "link": "shopify://collections/all",
+            "link": "shopify://collections/lumiere-dete-pret",
             "button_color": "btn--neutral",
             "display": "all"
           }

@@ -29,19 +29,22 @@ function closeLightbox() {
 
 // Size Guide
 
-document.addEventListener('DOMContentLoaded', () => {
   const lightboxButton = document.querySelector('[data-size-chart-lightbox]');
   const lightbox = document.querySelector('.ew-size-chart-lightbox');
   const lightboxImage = lightbox.querySelector('.ew-size-chart-image');
   const closeButton = lightbox.querySelector('.ew-size-chart-lightbox-close');
 
-  lightboxButton.addEventListener('click', (e) => {
-    const imageSrc = e.target.dataset.image;
-    if (imageSrc) {
-      lightboxImage.src = imageSrc;
+lightboxButton.addEventListener('click', (e) => {
+  const imageSrc = e.target.dataset.image;
+  if (imageSrc) {
+    lightboxImage.src = imageSrc;
+    setTimeout(() => {
+      
       lightbox.removeAttribute('hidden'); // Show lightbox
-    }
-  });
+    }, 100); // Delay of 50 milliseconds
+  }
+});
+
 
   closeButton.addEventListener('click', () => {
     lightbox.setAttribute('hidden', true);
@@ -53,4 +56,4 @@ document.addEventListener('DOMContentLoaded', () => {
       lightbox.setAttribute('hidden', true);
     }
   });
-});
+
