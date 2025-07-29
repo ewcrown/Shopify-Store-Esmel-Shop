@@ -24,6 +24,16 @@
   <div data-product-form-outer>
     {% comment %} The [data-product-form] tag distinguishes the product form from upsell instant-add-buttons. {% endcomment %}
     {%- form 'product', product, id: uniq_id, data-product-form: '', data-product-handle: product.handle -%}
+      
+      {% assign dimension = product.metafields.custom.custom_saree.value %}
+
+      {% if dimension != blank %}
+        <input type="hidden" name="properties[saree_length_waist]" id="input_saree_length_waist" value="">
+        <input type="hidden" name="properties[saree_waist]" id="input_saree_waist" value="">
+        <input type="hidden" name="properties[sleeves_length]" id="input_sleeves_length" value="">
+        <input type="hidden" name="properties[blouse_length]" id="input_blouse_length" value="">
+      {% endif %}
+
       {%- unless hidden -%}
         <div class="product__form__inner" data-form-inner>
 

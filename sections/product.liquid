@@ -259,6 +259,8 @@
                 {% render 'ew-size-chart', product: product %}
               {% when 'title' %}
                 {% render 'product-title', product: product, block: block, section: section %}
+              {% when 'dimensions' %}
+                {% render 'dimension', product: product, block: block, section: section %}
               {% when 'price' %}
                 {% render 'product-price', product: product, block: block, section: section %}
               {% when 'add-buttons' %}
@@ -726,6 +728,11 @@
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+      "type": "dimensions",
+      "name": "Dimension",
+      "settings": []
     },
     {
       "type": "sizechart",

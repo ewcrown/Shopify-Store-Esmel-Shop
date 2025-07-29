@@ -81,6 +81,10 @@
             "padding_bottom": 0
           }
         },
+         "dimensions_HfCtj7": {
+          "type": "dimensions",
+          "settings": {}
+        },
         "liquid_tkixwP": {
           "type": "liquid",
           "disabled": true,
@@ -193,6 +197,7 @@
         "subscriptions",
         "quantity",
         "sizes-remaining",
+        "dimensions_HfCtj7",
         "liquid_tkixwP",
         "sizechart_WrHxPQ",
         "buttons",

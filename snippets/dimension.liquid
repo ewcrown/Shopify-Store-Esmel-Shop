@@ -1,0 +1,62 @@
+{% assign dimension = product.metafields.custom.custom_saree.value %}
+{% assign blouse_length = dimension.blouse_length.value %}
+{% assign saree_length_waist = dimension.saree_length_waist.value %}
+{% assign saree_waist = dimension.saree_waist.value %}
+{% assign sleeves_length = dimension.sleeves_length.value %}
+
+{% if dimension != blank %}
+<div class="esmel-dimensions">
+  <label for="saree_length_waist">Saree Length</label>
+  <select name="saree_length_waist" id="saree_length_waist">
+    <option value="">-- Select Saree Length --</option>
+    {% for size in saree_length_waist %}
+      <option value="{{ size }}">{{ size }}</option>
+    {% endfor %}
+  </select>
+
+  <label for="saree_waist">Saree Waist</label>
+  <select name="saree_waist" id="saree_waist">
+    <option value="">-- Select Saree Waist --</option>
+    {% for waist in saree_waist %}
+      <option value="{{ waist }}">{{ waist }}</option>
+    {% endfor %}
+  </select>
+
+  <label for="sleeves_length">Sleeves Length</label>
+  <select name="sleeves_length" id="sleeves_length">
+    <option value="">-- Select Sleeves Length --</option>
+    {% for sleeve in sleeves_length %}
+      <option value="{{ sleeve }}">{{ sleeve }}</option>
+    {% endfor %}
+  </select>
+
+  <label for="blouse_length">Blouse Length</label>
+  <select name="blouse_length" id="blouse_length">
+    <option value="">-- Select Blouse Length --</option>
+    {% for length in blouse_length %}
+      <option value="{{ length }}">{{ length }}</option>
+    {% endfor %}
+  </select>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    function syncSelectToInput(selectId, inputId) {
+      const select = document.getElementById(selectId);
+      const input = document.getElementById(inputId);
+
+      if (select && input) {
+        select.addEventListener("change", function () {
+          input.value = this.value || "";
+        });
+        input.value = select.value || "";
+      }
+    }
+
+    syncSelectToInput("saree_length_waist", "input_saree_length_waist");
+    syncSelectToInput("saree_waist", "input_saree_waist");
+    syncSelectToInput("sleeves_length", "input_sleeves_length");
+    syncSelectToInput("blouse_length", "input_blouse_length");
+  });
+</script>
+{% endif %}
