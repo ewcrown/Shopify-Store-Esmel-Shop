@@ -268,7 +268,7 @@ div#shopify-section-sections--17444030021743__header {
 
 </style>
 
-<body id="{{ page_title | handle }}" class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} {{ settings.default_background }}{% if customer %} customer-logged-in{% endif %}">
+<body id="{{ page_title | handle }}" class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} {% if product.metafields.custom.custom_saree.value %}product-has-dimensions {% endif %} {{ settings.default_background }}{% if customer %} customer-logged-in{% endif %}">
 
   <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
 

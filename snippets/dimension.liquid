@@ -1,6 +1,6 @@
 {% assign dimension = product.metafields.custom.custom_saree.value %}
 {% assign blouse_length = dimension.blouse_length.value %}
-{% assign saree_length_waist = dimension.saree_length_waist.value %}
+{% assign saree_length_waist = dimension.saree_length.value %}
 {% assign saree_waist = dimension.saree_waist.value %}
 {% assign sleeves_length = dimension.sleeves_length.value %}
 
@@ -40,23 +40,46 @@
 </div>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    function syncSelectToInput(selectId, inputId) {
-      const select = document.getElementById(selectId);
-      const input = document.getElementById(inputId);
+document.addEventListener("DOMContentLoaded", function () {
+  function syncSelectToInput(selectId, inputId) {
+    const select = document.getElementById(selectId);
+    const input = document.getElementById(inputId);
 
-      if (select && input) {
-        select.addEventListener("change", function () {
-          input.value = this.value || "";
-        });
-        input.value = select.value || "";
-      }
+    if (select && input) {
+      // Sync on load
+      input.value = select.value || "";
+
+      // Sync on change
+      select.addEventListener("change", function () {
+        input.value = this.value || "";
+        checkAllFields(); // Re-check fields after each change
+      });
     }
+  }
 
-    syncSelectToInput("saree_length_waist", "input_saree_length_waist");
-    syncSelectToInput("saree_waist", "input_saree_waist");
-    syncSelectToInput("sleeves_length", "input_sleeves_length");
-    syncSelectToInput("blouse_length", "input_blouse_length");
-  });
+  // Call for each select-input pair
+  syncSelectToInput("saree_length_waist", "input_saree_length_waist");
+  syncSelectToInput("saree_waist", "input_saree_waist");
+  syncSelectToInput("sleeves_length", "input_sleeves_length");
+  syncSelectToInput("blouse_length", "input_blouse_length");
+
+  function checkAllFields() {
+    const fields = [
+      document.getElementById("input_saree_length_waist"),
+      document.getElementById("input_saree_waist"),
+      document.getElementById("input_sleeves_length"),
+      document.getElementById("input_blouse_length"),
+    ];
+
+    const allFilled = fields.every(field => field && field.value.trim() !== "");
+
+    if (allFilled) {
+      document.body.classList.remove("product-has-dimensions");
+    }
+  }
+
+  // Initial check on DOM load
+  checkAllFields();
+});
 </script>
 {% endif %}

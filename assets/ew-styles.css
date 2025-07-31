@@ -275,3 +275,9 @@
   display: block;
   overflow-y: auto;
 }
+
+.product-has-dimensions .btn--add-to-cart {
+  cursor: none;
+  pointer-events: none;
+  opacity: 0.5;
+}

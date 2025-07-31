@@ -81,7 +81,7 @@
             "padding_bottom": 0
           }
         },
-         "dimensions_HfCtj7": {
+        "dimensions_HfCtj7": {
           "type": "dimensions",
           "settings": {}
         },
@@ -116,7 +116,7 @@
             "auto_speed": "5",
             "show_border": false,
             "border_radius": 5,
-            "background_color": "#FFFFFF",
+            "background_color": "#ffffff",
             "text_color": "#121212",
             "name_color": "#121212",
             "icon_color": "#121212",
@@ -135,7 +135,7 @@
             "description_expanded": true,
             "title_1": "dispatch Timeline",
             "icon_name_1": "",
-            "raw_content_1": "<p>5-7 working days</p>",
+            "raw_content_1": "<p>Dispatch time line is 2 weeks</p>",
             "title_2": "Disclaimer",
             "icon_name_2": "",
             "raw_content_2": "<p>The fabric pattern/laces, patchwork, and handmade details may vary.<br/>Actual colors of the outfit may also vary from the colors being displayed on your device.<br/><br/>All laces used for finishing of the stitched outfit especially the dupatta or trousers may vary from the shoot.</p>",
