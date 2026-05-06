@@ -1,5 +1,6 @@
 <!-- /sections/product.liquid -->
 <style>
+  .selector-wrapper--color{display:none}
 @media only screen and (min-width: 1100px) {
   .large-up--three-eighths {
     width: 34.5%;
@@ -262,7 +263,9 @@
               {% when 'dimensions' %}
                 {% render 'dimension', product: product, block: block, section: section %}
               {% when 'price' %}
+                {% unless product.tags contains 'hide-price' %}
                 {% render 'product-price', product: product, block: block, section: section %}
+                {% endunless %}
               {% when 'add-buttons' %}
                 {% render 'product-buttons' product: product, uniq_id: product_form_id, block: block %}
               {% when 'quantity' %}
@@ -469,62 +472,102 @@
     assign seo_media = product.featured_media
   endif
 -%}
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org/",
-  "@type": "Product",
-  "name": {{ product.title | json }},
-  "url": {{ request.origin | append: product.url | json }},
-  {% if seo_media -%}
+{%- comment -%} Product schema removed — handled by snippets/schema-es.liquid {%- endcomment -%}
+  {%- comment %} ---- Product Page: Product Schema ---- {% endcomment %}
+  {%- assign product_url = shop.url | append: product.url -%}
+  {%- assign first_variant = product.selected_or_first_available_variant -%}
+  {% comment %} <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "{{ product.title | escape }}",
+    "url": "{{ product_url }}",
+    {%- if product.metafields.custom.sku != blank -%}
+    "sku": "{{ product.metafields.custom.sku | escape }}",
+    {%- elsif first_variant.sku != blank -%}
+    "sku": "{{ first_variant.sku | escape }}",
+    {%- endif -%}
+    "description": "{{ product.description | strip_html | truncate: 500 | escape }}",
     "image": [
-      {{ seo_media | image_url: width: 1920 | prepend: "https:" | json }}
+      {%- for image in product.images -%}
+        "{{ image | img_url: 'master' }}"{% unless forloop.last %},{% endunless %}
+      {%- endfor -%}
     ],
-  {%- endif %}
-  "description": {{ product.description | strip_html | json }},
-  {% if product.selected_or_first_available_variant.sku != blank -%}
-    "sku": {{ product.selected_or_first_available_variant.sku | json }},
-  {%- endif %}
-  "category": {{ product.type | json }},
-  {%- if product.metafields.reviews.rating.value != blank -%}
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "{{ product.metafields.reviews.rating.value }}",
-      "ratingCount": "{{ product.metafields.reviews.rating_count.value }}",
-      "bestRating": "{{ product.metafields.reviews.rating.value.scale_max }}",
-      "worstRating": "{{ product.metafields.reviews.rating.value.scale_min }}"
+    "brand": {
+      "@type": "Brand",
+      "name": "Esmel Official"
     },
-  {%- endif -%}
-  "brand": {
-    "@type": "Brand",
-    "name": {{ product.vendor | default: shop.name | json }}
+    "manufacturer": {
+      "@type": "Organization",
+      "name": "Esmel Official",
+      "url": "https://esmelofficial.com"
+    },
+    {%- if product.type != blank -%}
+    "category": "{{ product.type | escape }}",
+    {%- endif -%}
+    {%- if product.metafields.custom.color != blank -%}
+    "color": "{{ product.metafields.custom.color | escape }}",
+    {%- endif -%}
+    {%- if product.metafields.custom.material != blank -%}
+    "material": "{{ product.metafields.custom.material | escape }}",
+    {%- endif -%}
+    {%- if product.metafields.custom.pattern != blank -%}
+    "pattern": "{{ product.metafields.custom.pattern | escape }}",
+    {%- endif -%}
+    "offers": {
+  "@type": "Offer",
+  "url": {{ product_url | json }},
+  "priceCurrency": {{ shop.currency | json }},
+  "price": {{ product.price | divided_by: 100.0 | json }},
+  "priceValidUntil": "2026-12-31",
+  "availability": "https://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}",
+  "itemCondition": "https://schema.org/NewCondition",
+  "seller": {
+    "@type": "Organization",
+    "name": "Esmel Official",
+    "url": "https://esmelofficial.com"
   },
-  "offers": [
-    {%- for variant in product.variants -%}
-      {
-        "@type" : "Offer",
-        {%- if variant.sku != blank -%}
-          "sku": {{ variant.sku | json }},
-        {%- endif -%}
-        {%- if variant.barcode.size == 12 -%}
-          "gtin12": {{ variant.barcode | json }},
-        {%- endif -%}
-        {%- if variant.barcode.size == 13 -%}
-          "gtin13": {{ variant.barcode | json }},
-        {%- endif -%}
-        {%- if variant.barcode.size == 14 -%}
-          "gtin14": {{ variant.barcode | json }},
-        {%- endif -%}
-        "availability" : "http://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
-        "price" : {{ variant.price | divided_by: 100.00 | json }},
-        "priceCurrency" : {{ cart.currency.iso_code | json }},
-        "priceValidUntil": "{{ 'now' | date: '%s' | plus: seconds_price_valid | date: '%Y-%m-%d' }}",
-        "url" : {{ request.origin | append: variant.url | json }}
-      }{% unless forloop.last %},{% endunless %}
-    {%- endfor -%}
-  ]
+  "shippingDetails": {
+    "@type": "OfferShippingDetails",
+    "shippingRate": {
+      "@type": "MonetaryAmount",
+      "value": 0,
+      "currency": "PKR"
+    }
+  }
 }
-</script>
-
+    {%- if product.metafields.custom.shirt_components != blank
+        or product.metafields.custom.trouser != blank
+        or product.metafields.custom.dupatta != blank -%}
+    ,"additionalProperty": [
+      {%- assign has_prev = false -%}
+      {%- if product.metafields.custom.shirt_components != blank -%}
+        {
+          "@type": "PropertyValue",
+          "name": "Shirt Components",
+          "value": "{{ product.metafields.custom.shirt_components | escape }}"
+        }
+        {%- assign has_prev = true -%}
+      {%- endif -%}
+      {%- if product.metafields.custom.trouser != blank -%}
+        {% if has_prev %},{% endif %}{
+          "@type": "PropertyValue",
+          "name": "Trouser",
+          "value": "{{ product.metafields.custom.trouser | escape }}"
+        }
+        {%- assign has_prev = true -%}
+      {%- endif -%}
+      {%- if product.metafields.custom.dupatta != blank -%}
+        {% if has_prev %},{% endif %}{
+          "@type": "PropertyValue",
+          "name": "Dupatta",
+          "value": "{{ product.metafields.custom.dupatta | escape }}"
+        }
+      {%- endif -%}
+    ]
+    {%- endif -%}
+  }
+  </script> {% endcomment %}
 
 {% schema %}
 {

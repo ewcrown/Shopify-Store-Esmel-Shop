@@ -22,6 +22,23 @@
       data-slideshow-slides="{{ section.blocks.size }}"
       data-slideshow-speed="{{ section.settings.autoplay_speed | times: 1000 }}">
       {% for block in section.blocks %}
+               {%- liquid
+          # LOGIC FOR FETCHPRIORITY & LOADING
+          # We force 'eager' and 'high' as strings to ensure snippets don't overwrite them
+          assign loading_strategy = 'lazy'
+          assign priority_strategy = 'auto'
+          assign preload_strategy = false
+
+          if section.settings.preload_first_image and forloop.first
+            assign loading_strategy = 'eager'
+            assign priority_strategy = 'high'
+            assign preload_strategy = true
+          endif
+
+          assign alt_default = "Slideshow Image " | append: forloop.index
+          assign alt = block.settings.image.alt | default: alt_default
+        -%}
+
         <div class="slideshow__slide section--image {{ block.settings.text_color }}"
         {% if section.settings.width == "wrapper--none" and section.settings.padding_top == 0 %} data-overlay-header {% endif %}
           id="aos-{{ block.id }}"
@@ -83,7 +100,7 @@
 
           {%- assign alt_default = "Slideshow Image " | append: forloop.index -%}
           {%- assign alt = block.settings.image.alt | default: alt_default -%}
-          {% render 'image-parallax', img_object: block.settings.image, img_object_mobile: block.settings.mobile_image, frame_height_class: section.settings.height, alt: alt, preload: preload, loading: loading, fetchpriority: fetchpriority %}
+          {% render 'image-parallax', img_object: block.settings.image, img_object_mobile: block.settings.mobile_image, frame_height_class: section.settings.height, alt: alt, preload: preload_strategy, loading: loading_strategy, fetchpriority: priority_strategy %}
 
 
           {% if block.settings.link_text == '' and block.settings.link %}

@@ -85,13 +85,6 @@
           "type": "dimensions",
           "settings": {}
         },
-        "liquid_tkixwP": {
-          "type": "liquid",
-          "disabled": true,
-          "settings": {
-            "custom_liquid": "{% render 'timer' %}"
-          }
-        },
         "sizechart_WrHxPQ": {
           "type": "sizechart",
           "settings": {}
@@ -102,6 +95,12 @@
             "enable_payment_button": true,
             "enable_gift_card_recipient": true,
             "padding_bottom": 20
+          }
+        },
+        "liquid_tkixwP": {
+          "type": "liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"es-eid-notice\">\n  \n  Any Pret &amp; Unstitched to Stitched orders placed after 5th May will be processed after Eid.\n</div>\n<style>\n.es-eid-notice {\n  background: #fff8e7;\n  border: 1px solid #f0c040;\n  border-left: 4px solid #e6a817;\n  border-radius: 6px;\n  color: #7a5800;\n  font-size: 13px;\n  font-weight: 500;\n  line-height: 1.5;\n  padding: 10px 14px;\n  margin-top: 4px;\n  margin-bottom: 8px;\n}\n</style>"
           }
         },
         "quoli_reviews_ugc_quoli_nuggets_slider_Q6FDLm": {
@@ -198,9 +197,9 @@
         "quantity",
         "sizes-remaining",
         "dimensions_HfCtj7",
-        "liquid_tkixwP",
         "sizechart_WrHxPQ",
         "buttons",
+        "liquid_tkixwP",
         "quoli_reviews_ugc_quoli_nuggets_slider_Q6FDLm",
         "description",
         "text_NMgpyX",

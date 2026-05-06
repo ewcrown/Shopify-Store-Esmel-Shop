@@ -7,6 +7,7 @@
     assign price_small_class = block.settings.price_size | minus: 1 | prepend: 'accent-size-'
   endif
 -%}
+{% unless product.tags contains 'coming-soon' %}
 
 <div class="product__block__price" style="--PB: {{ block.settings.padding_bottom }}px;" {{ block.shopify_attributes }}>
   <div class="product__price__wrap">
@@ -75,3 +76,4 @@
     </div>
   </div>
 </div>
+{% endunless %}

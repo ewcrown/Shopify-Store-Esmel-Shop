@@ -12,69 +12,11 @@
     "section_slideshow_ANHkQQ": {
       "type": "section-slideshow",
       "blocks": {
-        "image_ifnLyp": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Main_Banner_1520x599_4aa9a13e-2775-4098-aa3a-e2d156b2d965.jpg",
-            "mobile_image": "shopify://shop_images/new_mobile.jpg",
-            "overlay_opacity": 15,
-            "overlay_color": "#000000",
-            "enable_overlay_text": false,
-            "kicker": "",
-            "title": "",
-            "richtext": "",
-            "text_align": "align--middle-left",
-            "text_color": "text--white",
-            "link_text": "",
-            "link": "shopify://collections/nouveau-chapitre",
-            "button_color": "btn--black",
-            "button_style": "btn"
-          }
-        },
-        "image_zb6pnF": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Main_Banner_1520x599_2.jpg",
-            "mobile_image": "shopify://shop_images/Mobile_Banner_400x567_2_e063d176-d504-442c-97e2-66e54948f5c1.jpg",
-            "overlay_opacity": 15,
-            "overlay_color": "#000000",
-            "enable_overlay_text": false,
-            "kicker": "",
-            "title": "",
-            "richtext": "",
-            "text_align": "align--middle-left",
-            "text_color": "text--white",
-            "link_text": "",
-            "link": "shopify://collections/nouveau-chapitre",
-            "button_color": "btn--black",
-            "button_style": "btn"
-          }
-        },
-        "image_iNEFMX": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Main_Banner_1520x599_9787148c-292b-44a8-a54b-367a88aadb7d.jpg",
-            "mobile_image": "shopify://shop_images/Mobile_Banner_414x596_10fd8052-f98c-4115-9055-1280fed75a37.jpg",
-            "overlay_opacity": 15,
-            "overlay_color": "#000000",
-            "enable_overlay_text": false,
-            "kicker": "",
-            "title": "",
-            "richtext": "",
-            "text_align": "align--middle-left",
-            "text_color": "text--white",
-            "link_text": "",
-            "link": "#",
-            "button_color": "btn--black",
-            "button_style": "btn"
-          }
-        },
         "image_gdxPcB": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Web_Banner_1920x1080_8dfa2765-1899-42ef-baa3-c8d1b61a3b6b.png",
-            "mobile_image": "shopify://shop_images/Web_Banner_414_x_596.png",
+            "image": "shopify://shop_images/Main-Banner-1520x599_jpg_f23e34f4-e3f8-43e1-801f-a5ba7e4cd32c.jpg",
+            "mobile_image": "shopify://shop_images/Mobile-Banner-414x596_jpg_01734961-5c05-42ba-af91-2a8a4aad6217.jpg",
             "overlay_opacity": 15,
             "overlay_color": "#000000",
             "enable_overlay_text": false,
@@ -84,16 +26,115 @@
             "text_align": "align--middle-left",
             "text_color": "text--white",
             "link_text": "Shop Now",
-            "link": "shopify://collections/lumiere-dete-pret",
+            "link": "shopify://collections/belle-saison",
+            "button_color": "btn--black",
+            "button_style": "btn"
+          }
+        },
+        "image_iNEFMX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Main-Banner-1520x599-_jpg.jpg",
+            "mobile_image": "shopify://shop_images/mob-banner-414x596_jpg.jpg",
+            "overlay_opacity": 15,
+            "overlay_color": "#000000",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-left",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "shopify://collections/mon-tresor-luxe-lawn-26",
+            "button_color": "btn--black",
+            "button_style": "btn"
+          }
+        },
+        "image_m73bCK": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Main-Banner-1520x599_b1fb01d4-5797-41a3-bdc0-70519e75fceb.jpg",
+            "mobile_image": "shopify://shop_images/mob-banner-414x596_d45db343-c97f-487d-b199-6a04ecf88d68.jpg",
+            "overlay_opacity": 15,
+            "overlay_color": "#000000",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-left",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "shopify://collections/lueur-dorient",
+            "button_color": "btn--black",
+            "button_style": "btn"
+          }
+        },
+        "image_ifnLyp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Main_Banner_1520x599_3b51eaf0-af44-4302-a413-9eb9fa5f0cf7.jpg",
+            "mobile_image": "shopify://shop_images/Mobile_Banner_400x567_a70e97f4-4020-4770-a001-ad210838a574_1.webp",
+            "overlay_opacity": 15,
+            "overlay_color": "#000000",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-left",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "shopify://collections/soif-de-vivre",
+            "button_color": "btn--black",
+            "button_style": "btn"
+          }
+        },
+        "image_LGVxqG": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Main-Banner-1520x599_LA-VIE-HAUTE.jpg",
+            "mobile_image": "shopify://shop_images/mob-banner.jpg",
+            "overlay_opacity": 15,
+            "overlay_color": "#000000",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-left",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "shopify://collections/la-vie-haute-esmel-wedding-festive",
+            "button_color": "btn--black",
+            "button_style": "btn"
+          }
+        },
+        "image_zb6pnF": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Main_Banner_1520x599_8999bbf9-21e2-406b-b0d7-124a427aaf52.jpg",
+            "mobile_image": "shopify://shop_images/Mobile_Banner_400x567_2ab626af-0a77-4903-9020-84aa51531835.jpg",
+            "overlay_opacity": 15,
+            "overlay_color": "#000000",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-left",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "shopify://collections/nouveau-chapitre",
             "button_color": "btn--black",
             "button_style": "btn"
           }
         },
         "image_yM49f9": {
           "type": "image",
+          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Live_Now-02_c2aa7e47-f336-4e9e-ac51-e6751ee2eaeb.png",
-            "mobile_image": "shopify://shop_images/Mobile_Live-01_292bfb92-5523-4e41-bd98-08c06ba63c6a.png",
+            "image": "shopify://shop_images/Main_Banner_1520x599_5f491447-285a-4835-9ae9-a984b1725f87.png",
+            "mobile_image": "shopify://shop_images/Mobile_Banner_400x567_36490fbe-90e6-4ef0-81fe-d501d224ed70.png",
             "overlay_opacity": 15,
             "overlay_color": "#000000",
             "enable_overlay_text": false,
@@ -110,17 +151,19 @@
         }
       },
       "block_order": [
-        "image_ifnLyp",
-        "image_zb6pnF",
-        "image_iNEFMX",
         "image_gdxPcB",
+        "image_iNEFMX",
+        "image_m73bCK",
+        "image_ifnLyp",
+        "image_LGVxqG",
+        "image_zb6pnF",
         "image_yM49f9"
       ],
       "settings": {
-        "autoplay": false,
+        "autoplay": true,
         "autoplay_speed": 8,
-        "preload_first_image": false,
-        "height": "use_screen_full",
+        "preload_first_image": true,
+        "height": "use_image",
         "color_bg": "palette--dark bg--invert",
         "width": "wrapper--none",
         "padding_top": 0,
@@ -193,14 +236,14 @@
         "text_color": "text--white",
         "color_bg": "hero__content--transparent",
         "width": "wrapper--none",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "collection_split_pB3MUC": {
       "type": "collection-split",
       "settings": {
-        "collection": "nouveau-chapitre",
+        "collection": "belle-saison",
         "product_list": [],
         "image": "shopify://shop_images/35A2333.jpg",
         "sticky_image_enable": true,
@@ -211,15 +254,15 @@
         "heading": "New Arrival",
         "text_color": "text--white",
         "link_text": "Shop Now",
-        "link": "shopify://collections/nouveau-chapitre",
+        "link": "shopify://collections/belle-saison",
         "button_color": "btn--black",
         "button_style": "btn",
         "grid_large": 2,
         "grid_small": 1.2,
         "limit": 10,
         "bg": "palette--light bg--neutral",
-        "video_bg": "shopify://files/videos/New Arrival Video 520x748.mp4",
-        "mobile_video_bg": "shopify://files/videos/New Arrival Video 520x748.mp4",
+        "video_bg": "shopify://files/videos/new arrival.mp4",
+        "mobile_video_bg": "shopify://files/videos/new arrival.mp4",
         "object_position": "center-center",
         "width": "wrapper--none",
         "padding_top": 36,
@@ -263,28 +306,10 @@
     "custom": {
       "type": "section-custom-content",
       "blocks": {
-        "image_MgF4Pa": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/650x590_2.jpg",
-            "overlay_opacity": 15,
-            "overlay_color": "#ffffff",
-            "enable_overlay_text": false,
-            "kicker": "",
-            "title": "",
-            "richtext": "",
-            "text_align": "align--middle-center",
-            "text_color": "text--white",
-            "link_text": "Shop Now",
-            "link": "shopify://collections/nouveau-chapitre",
-            "button_color": "btn--black",
-            "button_style": "btn"
-          }
-        },
         "image_Vi8Dbx": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/650x590.jpg",
+            "image": "shopify://shop_images/belle-saison-footer_1.webp",
             "overlay_opacity": 15,
             "overlay_color": "#000000",
             "enable_overlay_text": false,
@@ -294,18 +319,39 @@
             "text_align": "align--middle-center",
             "text_color": "text--white",
             "link_text": "Shop Now",
-            "link": "shopify://collections/nouveau-chapitre",
+            "link": "shopify://collections/belle-saison",
+            "button_color": "btn--black",
+            "button_style": "btn"
+          }
+        },
+        "image_MgF4Pa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/montresor-footer_1.webp",
+            "overlay_opacity": 15,
+            "overlay_color": "rgba(0,0,0,0)",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "link_text": "Shop Now",
+            "link": "shopify://collections/mon-tresor-luxe-lawn-26",
             "button_color": "btn--black",
             "button_style": "btn"
           }
         }
       },
       "block_order": [
-        "image_MgF4Pa",
-        "image_Vi8Dbx"
+        "image_Vi8Dbx",
+        "image_MgF4Pa"
+      ],
+      "custom_css": [
+        ".image__hero__pane img {object-fit: none !important;}"
       ],
       "settings": {
-        "height": "use_pixels_650",
+        "height": "use_image",
         "brick_gutter": 0,
         "borders": false,
         "bg_color": "",
@@ -313,6 +359,13 @@
         "width": "wrapper--none",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "section_liquid_HmiiTF": {
+      "type": "section-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "custom_liquid": "<style> \n.sliderule__panel .sliderow .sliderow__title {\n    justify-content: left;\n    width: 100%;\n    padding-left: 40px; \n}\n\n.es-badges-new-in, .es-badges-coming-soon {\n    position: absolute;\n    top: 15px;\n    left: 10px;\n    background: #242323!important;\n    color: #fff;\n    font-weight: 400;\n    padding: 4px;\n    font-size: 12px;\n}\n\n</style>"
       }
     }
   },
@@ -322,6 +375,7 @@
     "collection_split_pB3MUC",
     "section_collection_slider_Lgym7A",
     "product-grid",
-    "custom"
+    "custom",
+    "section_liquid_HmiiTF"
   ]
 }

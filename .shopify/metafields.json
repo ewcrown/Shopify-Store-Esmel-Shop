@@ -1,18 +1,7 @@
 {
   "article": [],
   "blog": [],
-  "collection": [
-    {
-      "key": "collections",
-      "namespace": "ecomposer",
-      "name": "Define sub collections for current collection",
-      "description": "Set the sub collection for curernt collection.",
-      "type": {
-        "name": "list.collection_reference",
-        "category": "REFERENCE"
-      }
-    }
-  ],
+  "collection": [],
   "company": [],
   "company_location": [],
   "location": [],
@@ -21,12 +10,12 @@
   "page": [],
   "product": [
     {
-      "key": "age_period",
-      "namespace": "custom",
-      "name": "Age Period",
-      "description": "",
+      "key": "queries",
+      "namespace": "shopify--discovery--product_search_boost",
+      "name": "Search product boosts",
+      "description": "List of search queries for which a product gets higher rank in search results",
       "type": {
-        "name": "single_line_text_field",
+        "name": "list.single_line_text_field",
         "category": "TEXT"
       }
     },
@@ -61,207 +50,66 @@
       }
     },
     {
-      "key": "queries",
-      "namespace": "shopify--discovery--product_search_boost",
-      "name": "Search product boosts",
-      "description": "List of search queries for which a product gets higher rank in search results",
+      "key": "color-pattern",
+      "namespace": "shopify",
+      "name": "Color",
+      "description": "Defines the primary color or pattern, such as blue or striped",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "theme",
+      "namespace": "shopify",
+      "name": "Theme",
+      "description": "Describes the product's primary theme or motif, such as sport, space, or holidays",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "decoration-material",
+      "namespace": "shopify",
+      "name": "Decoration material",
+      "description": "Identifies the material used for decoration, such as sequins or feathers",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "shopware_property_values",
+      "namespace": "custom",
+      "name": "Shopware Property Values",
+      "description": null,
       "type": {
         "name": "list.single_line_text_field",
         "category": "TEXT"
       }
     },
     {
-      "key": "custom_product",
-      "namespace": "mm-google-shopping",
-      "name": "Google: Custom Product",
-      "description": "Use to indicate whether or not the unique product identifiers (UPIs) GTIN, MPN, and brand are available for your product.",
-      "type": {
-        "name": "boolean",
-        "category": "TRUE_FALSE"
-      }
-    },
-    {
-      "key": "rating",
-      "namespace": "reviews",
-      "name": "Product rating",
-      "description": "Average rating from customers",
-      "type": {
-        "name": "rating",
-        "category": "RATING"
-      }
-    },
-    {
-      "key": "rating_count",
-      "namespace": "reviews",
-      "name": "Product rating count",
-      "description": "Total number of ratings from customers",
-      "type": {
-        "name": "number_integer",
-        "category": "NUMBER"
-      }
-    },
-    {
-      "key": "countdown",
-      "namespace": "ecomposer",
-      "name": "EComposer product countdown end at",
-      "description": "Set date and time countdown end at",
-      "type": {
-        "name": "date_time",
-        "category": "DATE_TIME"
-      }
-    },
-    {
-      "key": "countdown_from",
-      "namespace": "ecomposer",
-      "name": "EComposer product countdown start at",
-      "description": "Set date and time countdown start at",
-      "type": {
-        "name": "date_time",
-        "category": "DATE_TIME"
-      }
-    },
-    {
-      "key": "complementary_products",
-      "namespace": "globo--filter--product_recommendation",
-      "name": "Complementary products",
+      "key": "shopware_variant_option_values",
+      "namespace": "custom",
+      "name": "Shopware Variant Option Values",
       "description": null,
       "type": {
-        "name": "list.product_reference",
-        "category": "REFERENCE"
+        "name": "list.single_line_text_field",
+        "category": "TEXT"
       }
     },
     {
-      "key": "related_products",
-      "namespace": "globo--filter--product_recommendation",
-      "name": "Related products",
-      "description": null,
+      "key": "product_benefits_content",
+      "namespace": "custom",
+      "name": "Product Benefits Content",
+      "description": "",
       "type": {
-        "name": "list.product_reference",
-        "category": "REFERENCE"
-      }
-    },
-    {
-      "key": "bought_together_products",
-      "namespace": "globo--filter--product_recommendation",
-      "name": "Bought together products",
-      "description": null,
-      "type": {
-        "name": "list.product_reference",
+        "name": "list.metaobject_reference",
         "category": "REFERENCE"
       }
     }
   ],
-  "variant": [
-    {
-      "key": "age_group",
-      "namespace": "mm-google-shopping",
-      "name": "Google: Age Group",
-      "description": "The demographic for which your product is intended.",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "condition",
-      "namespace": "mm-google-shopping",
-      "name": "Google: Condition",
-      "description": "The condition of your product at time of sale.",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "gender",
-      "namespace": "mm-google-shopping",
-      "name": "Google: Gender",
-      "description": "The gender for which your product is intended.",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "mpn",
-      "namespace": "mm-google-shopping",
-      "name": "Google: MPN",
-      "description": "Your product’s Manufacturer Part Number (MPN).",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "size_type",
-      "namespace": "mm-google-shopping",
-      "name": "Google: Size Type",
-      "description": "Your apparel product’s cut.",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "size_system",
-      "namespace": "mm-google-shopping",
-      "name": "Google: Size System",
-      "description": "The country of the size system used by your product.",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "custom_label_0",
-      "namespace": "mm-google-shopping",
-      "name": "Google: Custom Label 0",
-      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns.",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "custom_label_1",
-      "namespace": "mm-google-shopping",
-      "name": "Google: Custom Label 1",
-      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns.",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "custom_label_2",
-      "namespace": "mm-google-shopping",
-      "name": "Google: Custom Label 2",
-      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns.",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "custom_label_3",
-      "namespace": "mm-google-shopping",
-      "name": "Google: Custom Label 3",
-      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns.",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "custom_label_4",
-      "namespace": "mm-google-shopping",
-      "name": "Google: Custom Label 4",
-      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns.",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    }
-  ],
+  "variant": [],
   "shop": []
 }

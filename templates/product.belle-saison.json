@@ -88,13 +88,6 @@
             "padding_bottom": 0
           }
         },
-        "liquid_tkixwP": {
-          "type": "liquid",
-          "disabled": true,
-          "settings": {
-            "custom_liquid": "{% render 'timer' %}"
-          }
-        },
         "sizechart_WrHxPQ": {
           "type": "sizechart",
           "settings": {}
@@ -107,7 +100,7 @@
             "padding_bottom": 20
           }
         },
-        "liquid_Rt3paq": {
+        "liquid_tkixwP": {
           "type": "liquid",
           "settings": {
             "custom_liquid": "<div class=\"es-eid-notice\">\n  \n  Any Pret &amp; Unstitched to Stitched orders placed after 5th May will be processed after Eid.\n</div>\n<style>\n.es-eid-notice {\n  background: #fff8e7;\n  border: 1px solid #f0c040;\n  border-left: 4px solid #e6a817;\n  border-radius: 6px;\n  color: #7a5800;\n  font-size: 13px;\n  font-weight: 500;\n  line-height: 1.5;\n  padding: 10px 14px;\n  margin-top: 4px;\n  margin-bottom: 8px;\n}\n</style>"
@@ -147,7 +140,7 @@
             "raw_content_1": "<p>{{ product.metafields.custom.product_description | metafield_tag }}</p>",
             "title_2": "dispatch Timeline",
             "icon_name_2": "",
-            "raw_content_2": "<p>Unstitched : 3-5 working days<br/>Stitched: 5-7 working days</p>",
+            "raw_content_2": "<p><strong>Stitching:</strong> 10 to 14 working days<br/><strong>Unstitched :</strong> 3 to 5 working days</p>",
             "title_3": "Disclaimer",
             "icon_name_3": "",
             "raw_content_3": "<p>The fabric pattern/laces, patchwork, and handmade details may vary.<br/>Actual colors of the outfit may also vary from the colors being displayed on your device.<br/><br/>All laces used for finishing of the stitched outfit especially the dupatta or trousers may vary from the shoot.</p>",
@@ -167,6 +160,34 @@
             "title": "<p>dispatch</p>",
             "padding_bottom": 20
           }
+        },
+        "upsell": {
+          "type": "upsell",
+          "disabled": true,
+          "settings": {
+            "title": "Buy it with",
+            "upsell_type": "product_single",
+            "product": "",
+            "upsell_product_list": [],
+            "upsell_list_limit": 1,
+            "padding_bottom": 20
+          }
+        },
+        "pickup": {
+          "type": "pickup",
+          "disabled": true,
+          "settings": {
+            "padding_bottom": 20
+          }
+        },
+        "sharing": {
+          "type": "sharing",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share",
+            "target_device": "",
+            "padding_bottom": 20
+          }
         }
       },
       "block_order": [
@@ -179,13 +200,15 @@
         "subscriptions",
         "quantity",
         "sizes-remaining",
-        "liquid_tkixwP",
         "sizechart_WrHxPQ",
         "buttons",
-        "liquid_Rt3paq",
+        "liquid_tkixwP",
         "quoli_reviews_ugc_quoli_nuggets_slider_aL3KBm",
         "description",
-        "text_NMgpyX"
+        "text_NMgpyX",
+        "upsell",
+        "pickup",
+        "sharing"
       ],
       "custom_css": [
         "span.variant-sku {border-bottom: 1px solid; margin-bottom: 0.5rem; display: inline-block;}"

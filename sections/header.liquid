@@ -1,5 +1,7 @@
 <!-- /sections/header.liquid -->
-
+<style>#whatsapp:hover path {
+  fill: #000; /* WhatsApp green */
+}</style>
 {%- liquid
   assign transparent_header = false
   if template contains 'collection' and collection.image and section.settings.transparent_collection
@@ -423,10 +425,22 @@
 </div>
 <div class="header__desktop__button {% if request.path contains routes.account_url %} main-menu--active{% endif %}" {{ text_hover }}>
     <a class="navlink navlink-call" href="tel:{{ section.settings.phone_number }}" aria-label="Contact Us">
-      <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" version="1.1" viewBox="0 0 17 17"  width="20px" height="20px" fill="#b5b5b5">
+      {% comment %} <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" version="1.1" viewBox="0 0 17 17"  width="20px" height="20px" fill="#b5b5b5">
         <!-- Generator: Adobe Illustrator 29.0.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 192)  -->
         <path d="M13.04,16.97c-.72,0-1.39-.14-1.52-.16C1.72,14.14.2,5.78.06,4.83c-.27-1.84.49-2.57.63-2.69L2.65.32C2.87.12,3.17.01,3.47.03c.3.02.58.15.78.38l1.41,1.63,1.23,1.38c.54.6.53,1.5-.02,2.1l-1.21,1.3c-.29.31-.34.77-.13,1.13,1.07,1.82,2.7,3,3.58,3.54.36.22.81.18,1.13-.1l1.29-1.15c.58-.52,1.46-.52,2.05-.01l3.04,2.64c.23.2.37.48.38.79.01.31-.1.6-.31.82l-1.89,1.96c-.39.42-1.1.53-1.76.53ZM3.4.7c-.11,0-.22.04-.3.12l-1.99,1.84s-.62.53-.39,2.07c.13.9,1.58,8.87,10.95,11.42.79.17,2.02.32,2.64-.18l1.89-1.97c.08-.09.13-.2.12-.32,0-.12-.06-.23-.15-.31l-3.04-2.64c-.33-.29-.83-.29-1.16,0l-1.29,1.15c-.54.48-1.31.55-1.93.17-.93-.57-2.66-1.83-3.81-3.77-.36-.62-.27-1.41.21-1.93l1.21-1.3c.31-.34.32-.85.01-1.19l-1.24-1.38-1.41-1.64c-.08-.09-.19-.14-.31-.15,0,0-.02,0-.03,0Z"/>
-      </svg>
+      </svg> {% endcomment %}
+      <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 124 124" viewBox="0 0 124 124" id="whatsapp"  width="25px" height="25px" fill="#b5b5b5">
+  <path fill="#b5b5b5" fill-rule="evenodd" d="M64,15.8c-25.5,0-46.2,20.7-46.2,46.2c0,9,2.5,17.6,7.4,25.1l-7,15.5
+				c-0.6,1.4-0.4,3.1,0.6,4.3c0.8,0.9,1.9,1.4,3.1,1.4c0.4,0,0.7,0,1.1-0.1l19.4-5.3c6.7,3.6,14.2,5.5,21.8,5.5
+				c25.5,0,46.2-20.7,46.2-46.2C110.2,36.5,89.5,15.8,64,15.8z M64,100.2c-6.8,0-13.4-1.8-19.2-5.2c-0.6-0.4-1.3-0.6-2-0.6
+				c-0.4,0-0.7,0-1.1,0.1L29,98l4.4-9.7c0.6-1.3,0.4-2.9-0.4-4c-4.7-6.5-7.2-14.2-7.2-22.3C25.8,41,43,23.8,64,23.8
+				c21,0,38.2,17.1,38.2,38.2C102.2,83,85.1,100.2,64,100.2z" clip-rule="evenodd"></path>
+  <path fill="#b5b5b5" fill-rule="evenodd" d="M81.8,68.9c-1.9-1.2-4.5-2.5-6.7-1.5c-1.7,0.7-2.9,3.5-4,4.9c-0.6,0.7-1.3,0.8-2.2,0.5
+				c-6.6-2.6-11.6-7-15.2-13c-0.6-0.9-0.5-1.7,0.2-2.6c1.1-1.3,2.5-2.8,2.8-4.5c0.3-1.7-0.5-3.8-1.2-5.3c-0.9-2-1.9-4.8-3.9-5.9
+				c-1.8-1-4.2-0.5-5.8,0.9c-2.8,2.3-4.2,5.9-4.1,9.4c0,1,0.1,2,0.4,3c0.6,2.3,1.6,4.5,2.9,6.6c0.9,1.6,1.9,3.1,3,4.5
+				c3.5,4.8,7.9,8.9,12.9,12c2.5,1.5,5.3,2.9,8.1,3.8c3.2,1,6,2.1,9.4,1.5c3.6-0.7,7.1-2.9,8.5-6.3c0.4-1,0.6-2.2,0.4-3.2
+				C86.6,71.3,83.6,70,81.8,68.9z" clip-rule="evenodd"></path>
+</svg>
 </a>
     </div>
     <div class="header__desktop__button {% if request.path contains routes.account_url %} main-menu--active{% endif %}" {{ text_hover }}>
@@ -629,31 +643,9 @@
   </div>
 </div>
 
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "Organization",
-  "name": {{ shop.name | json }},
-  {% if section.settings.logo %}
-    {% assign image_size = section.settings.logo.width | append: 'x' %}
-    "logo": {{ section.settings.logo | img_url: image_size | prepend: "https:" | json }},
-  {% endif %}
-  "sameAs": [
-    {{ settings.social_twitter_link | json }},
-    {{ settings.social_facebook_link | json }},
-    {{ settings.social_instagram_link | json }},
-    {{ settings.social_pinterest_link | json }},
-    {{ settings.social_youtube_link | json }},
-    {{ settings.social_vimeo_link | json }},
-    {{ settings.social_snapchat_link | json }},
-    {{ settings.social_medium_link | json }},
-    {{ settings.social_tumblr_link | json }}
-  ],
-  "url": {{ shop.url | append: page.url | json }}
-}
-</script>
+{%- comment -%} Organization schema removed — handled by snippets/schema-es.liquid {%- endcomment -%}
 
-{% if template.name == 'index' %}
+{% comment %} {% if template.name == 'index' %}
   {% assign potential_action_target = shop.url | append: "/search?q={search_term_string}" %}
   <script type="application/ld+json">
     {
@@ -668,7 +660,7 @@
       "url": {{ shop.url | append: page.url | json }}
     }
   </script>
-{% endif %}
+{% endif %} {% endcomment %}
 
 {% schema %}
 {

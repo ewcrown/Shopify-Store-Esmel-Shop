@@ -45,11 +45,12 @@
     "font_heading_size": 100,
     "font_body_size": 100,
     "font_accent_size": 95,
-    "layout_site_width": 1450,
+    "layout_site_width": 1400,
     "layout_gutter": 24,
-    "layout_outer": 50,
+    "layout_outer": 0,
     "button_radius": 2,
     "animations_scroll_enable": true,
+    "parallax_enable": false,
     "favicon": "shopify://shop_images/Esmel_logo-02.png",
     "collection_text_alignment": "text-left",
     "product_grid_image": "crop",
@@ -62,6 +63,7 @@
     "swatches_squares": true,
     "swatches_collection_enable": true,
     "badge_sale_discount": true,
+    "badge_sellout": false,
     "color_badge": "#ffffff",
     "color_badge_text": "#000000",
     "product_grid_show_rating": false,
@@ -101,6 +103,18 @@
         "type": "shopify://apps/microsoft-clarity/blocks/clarity_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
         "disabled": false,
         "settings": {}
+      },
+      "7079518687644006178": {
+        "type": "shopify://apps/checkout-blocks/blocks/app-embed/b0024ca5-9de8-4bf0-a92f-cd0783877ae2",
+        "disabled": false,
+        "settings": {
+          "utm_id": true,
+          "utm_source": true,
+          "utm_medium": true,
+          "utm_campaign": true,
+          "utm_term": true,
+          "ref": true
+        }
       }
     }
   },

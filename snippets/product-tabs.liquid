@@ -111,7 +111,7 @@
       {%- if _title != '' and _content_stripped != '' -%}
         {%- capture accordion_blocks_html -%}
           {{ accordion_blocks_html }}
-          <div class="accordion__wrapper">
+          <div class="accordion__wrapper ">
             <button class="accordion__title js"
               data-accordion-trigger="{{ block_id }}"
               aria-controls="{{ block_id }}"
@@ -145,7 +145,7 @@
 
     {%- if product_description_content != blank and block.settings.enable_description -%}
       {% assign block_id = block.id | append: '-main' %}
-      <div class="accordion__wrapper">
+      <div class="accordion__wrapper ">
         <button class="accordion__title js {% if block.settings.description_expanded %} accordion-is-open{% endif %}"
           data-accordion-trigger="{{ block_id }}"
           aria-controls="{{ block_id }}"

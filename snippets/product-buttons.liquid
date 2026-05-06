@@ -17,7 +17,7 @@
     assign buybutton_setting = false
   endif
 -%}
-
+{% unless product.tags contains 'coming-soon' %}
 <product-form x-data="productAddButtonForm()" class="product__block__buttons" style="--PB: {{ block.settings.padding_bottom }}px;" {{ block.shopify_attributes }} >
   <div data-product-form-outer>
     {% comment %} The [data-product-form] tag distinguishes the product form from upsell instant-add-buttons. {% endcomment %}
@@ -61,7 +61,7 @@
             {%- unless current_variant.available -%}
               {%- assign button_text =  'products.product.sold_out' | t -%}
             {%- endunless -%}
-
+            {% unless product.tags contains 'hide-price' %}
             <div class="product__submit__buttons{% if product.has_only_default_variant %} product__submit__buttons--clear{% endif %}">
               <span class="sr-only" aria-live="polite" x-show="isLoading">
                 {{ 'products.product.adding_to_cart' | t }}
@@ -113,6 +113,7 @@
                 </div>
               {%- endif -%}
             </div>
+            {% endunless %}
           </div>
         </div>
 
@@ -129,3 +130,4 @@
     {%- endform -%}
   </div>
 </product-form>
+{% endunless %}

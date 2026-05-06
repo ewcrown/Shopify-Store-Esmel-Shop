@@ -271,7 +271,7 @@
 
 .ew-size-chart-image {
   max-width: 90vw;
-  max-height: 80vh;
+  max-height: 56vh;
   display: block;
   overflow-y: auto;
 }
@@ -281,4 +281,10 @@
   cursor: none;
   pointer-events: none;
   opacity: 0.5;
+}
+ 
+@media only screen and (min-width: 1100px) {
+  .grid__item.product__media__wrapper.large-up--five-eighths {
+    width: 63%;
+  }
 }

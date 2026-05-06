@@ -109,7 +109,7 @@
                   {% for link in link.links %}
                     {% assign link_title_handle = link.title | handle %}
                     <a href="{{ link.url }}" data-stagger-second class="navlink navlink--grandchild{% if link.active %} main-menu--active{% endif %}{% if highlight_links contains link_title_handle %} highlight--link{% endif %}">
-                      <span class="navtext">{{ link.title | strip_html | escape }}</span>
+                      <span class="navtext">{{ link.title }}</span>
                     </a>
                   {% endfor %}
                 </div>
@@ -119,7 +119,7 @@
                 {% for link in link.links %}
                   {% assign link_title_handle = link.title | handle %}
                   <a href="{{ link.url }}" data-stagger class="navlink navlink--grandchild{% if link.active %} main-menu--active{% endif %}{% if highlight_links contains link_title_handle %} highlight--link{% endif %}">
-                    <span class="navtext">{{ link.title | strip_html | escape }}</span>
+                    <span class="navtext">{{ link.title }}</span>
                   </a>
                 {% endfor %}
               </div>
@@ -137,7 +137,7 @@
             {% for link in link.links %}
               {% assign link_title_handle = link.title | handle %}
               <a href="{{ link.url }}" data-stagger class="navlink navlink--child{% if link.active %} main-menu--active{% endif %}{% if highlight_links contains link_title_handle %} highlight--link{% endif %}">
-                <span class="navtext">{{ link.title | strip_html | escape }}</span>
+                <span class="navtext">{{ link.title }}</span>
               </a>
             {% endfor %}
           {%- endif -%}
