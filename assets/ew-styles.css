@@ -282,9 +282,17 @@
   pointer-events: none;
   opacity: 0.5;
 }
- 
+
 @media only screen and (min-width: 1100px) {
   .grid__item.product__media__wrapper.large-up--five-eighths {
     width: 63%;
   }
+}
+
+.ew-size-chart-open {
+  overflow: hidden;
+}
+
+.ew-size-chart-open .splide__arrow {
+  z-index: -1;
 }

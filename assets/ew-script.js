@@ -33,6 +33,7 @@ function closeLightbox() {
   const lightbox = document.querySelector('.ew-size-chart-lightbox');
   const lightboxImage = lightbox.querySelector('.ew-size-chart-image');
   const closeButton = lightbox.querySelector('.ew-size-chart-lightbox-close');
+  const bodyOpenClass = 'ew-size-chart-open';
 
 lightboxButton.addEventListener('click', (e) => {
   const imageSrc = e.target.dataset.image;
@@ -41,6 +42,7 @@ lightboxButton.addEventListener('click', (e) => {
     setTimeout(() => {
       
       lightbox.removeAttribute('hidden'); // Show lightbox
+      document.body.classList.add(bodyOpenClass);
     }, 100); // Delay of 50 milliseconds
   }
 });
@@ -48,12 +50,14 @@ lightboxButton.addEventListener('click', (e) => {
 
   closeButton.addEventListener('click', () => {
     lightbox.setAttribute('hidden', true);
+    document.body.classList.remove(bodyOpenClass);
   });
 
   // Close on clicking outside the image
   lightbox.addEventListener('click', (e) => {
     if (e.target === lightbox) {
       lightbox.setAttribute('hidden', true);
+      document.body.classList.remove(bodyOpenClass);
     }
   });
 
